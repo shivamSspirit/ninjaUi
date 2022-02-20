@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>main content</title>
+	<link rel="stylesheet" href="./index.css" />
+	<script
+		src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+		defer=""></script>
+</head>
+
+<body>
+	<section id="container">
+		<header class="header">
+			<div class="icon-container">
+				<a class="img-link" href="../../index.html"><span>
+						<img class="icon" src="../../images/jpeg/headicon.png" alt="" /></a>
+				</span>
+			</div>
+			<div class="nav">
+				<a href="../../index.html" class="home navs">Home</a>
+				<a href="./index.html" class="document navs">Document</a>
+			</div>
+			<div class="socials">
+				<span><a href="https://github.com/shivamsoni00"><img src='../../images/jpeg/github.png'
+							class="github" /></a></span>
+				<span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img src='../../images/jpeg/linkedin.png'
+							class="linkedin" /></a></span>
+				<span><a href="https://twitter.com/ShivamSspirit">
+						<img src='../../images/jpeg/twitter.png' class="twitter" /></span>
+				</a>
+			</div>
+		</header>
+
+		<aside class="aside">
+			<div class="sidebar">
+				<ul class="cl-screens">
+					<li class="">
+						<a href="" class="link">Getting-started</a>
+						<div class="content-collapse">
+							<ul class="getting-started">
+								<li><a href="../iframe/iframe.html" target="iframe_a" class="li-a">-getting-Started</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="">
+						<a href="" class="link">P0 screens</a>
+						<div class="content-collapse">
+							<ul class="p0-screens">
+								<li><a href="../avatars/avatar.html" target="iframe_a" class="li-a">-Avatar</a></li>
+								<li><a href="../alerts/alert.html" target="iframe_a" class="li-a">-Alert</a></li>
+								<li><a href="../badges/badges.html" target="iframe_a" class="li-a">-Badges</a></li>
+								<li><a href="../buttons/btn.html" target="iframe_a" class="li-a">-Buttons</a></li>
+								<li><a href="../clCards/card.html" target="iframe_a" class="li-a">-Cards</a></li>
+								<li><a href="../images/image.html" target="iframe_a" class="li-a">-images</a></li>
+								<li><a href="../inputs/input.html" target="iframe_a" class="li-a">-inputs and forms</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="">
+						<a href="" class="link">p1 screens</a>
+						<div class="content-collapse">
+							<ul class="p1-screens">
+								<li><a href="#texts" class="li-a">-Text utilities</a></li>
+								<li><a href="#Lists" class="li-a">-Lists</a></li>
+								<li><a href="#Navigation" class="li-a">-Navigation</a></li>
+								<li><a href="#modal" class="li-a">-modal</a></li>
+								<li><a href="#Ratings" class="li-a">-Ratings</a></li>
+								<li><a href="#toast" class="li-a">-Toast-notify-snackbar</a></li>
+								<li><a href="#grid" class="li-a">-simplified grid</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<main class="main">
+		
+			<iframe src="../iframe/iframe.html" name="iframe_a" height="100%" width="100%" title="Iframe Example" style="border:none;"> 
+			</iframe>
+		
+			
+		</main>
+		<!-- <footer class="footer">Footer</footer> -->
+	</section>
+	<!-- script for index -->
+	<script type="text/javascript">
+		var coll = document.querySelectorAll(".link");
+		var i;
+		for (let i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", (e) => {
+				e.preventDefault();
+				coll[i].classList.toggle("active");
+				var content = coll[i].nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
+	<!-- end -->
+
+
+	<!-- script for badges -->
+	<script type="text/javascript">
+		let emailBadge = document.querySelector(".status-number-email");
+		let cartBadge = document.querySelector(".status-number-cart");
+		let menuBadge = document.querySelector(".status-number-menu");
+
+		function count() {
+			let val = Number(emailBadge.innerText);
+			val = val + 1;
+			emailBadge.innerText = String(val);
+		}
+
+		function count0() {
+			let val = Number(cartBadge.innerText);
+			val = val + 2;
+			cartBadge.innerText = String(val);
+		}
+
+		function count1() {
+			let val = Number(menuBadge.innerText);
+			if (val > 1) {
+				val = val ** val;
+			}
+			val = val + 1;
+			menuBadge.innerText = String(val);
+		}
+
+		cartBadge.addEventListener("click", count0());
+		menuBadge.addEventListener("click", count1());
+		emailBadge.addEventListener("click", count());
+
+		document
+			.querySelector(".status-txt-p1.bad")
+			.addEventListener("click", function () {
+				if (this.classList.contains("bad")) {
+					this.classList.remove("status-txt-p1", "bad");
+					this.classList.add("status-txt-p1", "good");
+				} else {
+					console.log("thanks");
+				}
+			});
+	</script>
+
+	<!-- end -->
+
+
+	<!-- script for alert -->
+	<script type="text/javascript">
+		function removeFadeOut(el, speed) {
+			var second = speed / 1000 + "s";
+			el.addEventListener("click", function () {
+				el.parentElement.style.transition = `all ${second} ease-in`;
+				el.style.opacity = 0.5;
+				el.parentElement.style.transform = "translateX(200px)";
+				setTimeout(() => {
+					const alertContainer = el.parentElement;
+					alertContainer.remove();
+				}, speed);
+			});
+		}
+
+		removeFadeOut(document.querySelector(".close"), 2000);
+	</script>
+
+	<!-- end -->
+
+	<!-- script for codeBox -->
+
+
+	<script type="text/javascript">
+		//<![CDATA[
+		(function () {
+			function htmlEscape(s) {
+				return s
+					.replace(/&/g, "&amp;")
+					.replace(/</g, "&lt;")
+					.replace(/>/g, "&gt;");
+			}
+			console.log(
+				"sdhasjdjas",
+				document.documentElement.lastChild.childNodes[2]
+			);
+			// this page's own source code
+			var quineHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine').innerHTML + "\n<\/html>\n");
+			// Highlight the operative parts:
+			quineHtml = quineHtml.replace(
+				/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+				'<span class="operative">$&<\/span>'
+			);
+			// insert into PRE
+			document.getElementById("quine").innerHTML = quineHtml;
+		})();
+			//]]>
+	</script>
+	<!-- script for codeBox end -->
+</body>
+
+</html>
