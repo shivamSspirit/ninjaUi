@@ -1,0 +1,22 @@
+@import url(../../theme/theme.css);
+
+.content {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.heading {
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--main-text-color);
+}
+
+.p-txt{
+	font-size: var(--main-text-size);
+	font-weight: var(--main-text-weight);
+	color: var(--main-text-color);
+}
