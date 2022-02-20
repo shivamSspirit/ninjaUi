@@ -13,4 +13,7 @@
 @import url(./Components/inputs/input.css);
 
 
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
