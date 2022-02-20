@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./iframe.css"/>
+    <script
+    src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+    defer=""></script>
+    <title>src</title>
+</head>
+<body>
+    <div class="content">
+        <h2 class="heading">Get started</h2>
+        <p class="p-txt">
+            SpiritUI is a component library where you can easily import it and build your web application more
+            faster and responsive just by dropping css classes.
+        </p>
+        <pre class="prettyprint lang-html" id="quine">
+                <code>
+                    <link rel="stylesheet" href="https://pret.netlify.app/styles/drop.css"/>
+                </code>
+            </pre>
+        </div>
+</body>
+<script type="text/javascript">
+    //<![CDATA[
+    (function () {
+        function htmlEscape(s) {
+            return s
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
+        }
+        // this page's own source code
+        var quineHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine').innerHTML + "\n<\/html>\n");
+        // Highlight the operative parts:
+        quineHtml = quineHtml.replace(
+            /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+            '<span class="operative">$&<\/span>'
+        );
+        // insert into PRE
+        document.getElementById("quine").innerHTML = quineHtml;
+    })();
+        //]]>
+</script>
+</html>
