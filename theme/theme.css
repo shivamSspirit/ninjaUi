@@ -1,0 +1,63 @@
+:root {
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* header */
+
+	--default-color: #d97706;
+	--primary-color: black;
+	--secondary-color: white;
+
+	--header-text-size: 1rem;
+	--header-text-weight: 500;
+
+	--header-text-hover-bg-color: var(--default-color);
+	--header-text-hover-txt-color: var(--secondary-color);
+
+	/* header is over */
+
+	/* landing page style */
+
+	--land-head-size: 1.7rem;
+	--land-head-weight: 600;
+
+	--land-text-size: 1rem;
+	--land-text-weight: 550;
+
+	--land-txt-color: var(--primary-color);
+	--land-bg-color: linear-gradient(to bottom, #f0b7a1 0%,#aa3c11 50%,#9c3710 68%,#994b2d 70%,#bf6e4e 100%);
+
+
+	/* landing page end */
+
+	/* main content page start */
+
+	/* side bar */
+	--side-head-size: 1.3em;
+	--side-head-weight: 600;
+
+	--side-txt-size: 1rem;
+	--side-text-weight: 550;
+
+	--side-txt-color: var(--primary-color);
+	--side-txt-hover-color: var(--secondary-color);
+
+	/* side bar */
+
+	/* main content */
+
+	--main-text-size: 1rem;
+	--main-text-weight: 550;
+
+	--main-head-size: 1.3em;
+	--main-head-weight: 600;
+
+	--main-text-color: var(--primary-color);
+
+	/* code style */
+
+	/* code style end */
+
+	/* main content */
+
+	/* main content page end */
+}
