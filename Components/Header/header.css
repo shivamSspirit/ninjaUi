@@ -80,21 +80,10 @@ body {
 	right: 3.3rem;
 }
 
-.github {
+.social-icons{
 	max-width: 2rem;
 	max-height: 2rem;
 }
-
-.linkedin {
-	max-width: 2rem;
-	max-height: 2rem;
-}
-
-.twitter {
-	max-width: 2rem;
-	max-height: 2rem;
-}
-
 
 
 @media only screen and (max-width: 530px){
