@@ -1,0 +1,16 @@
+@import url(./theme/theme.css);
+@import url(./index.css);
+@import url(./theme/heading.css);
+@import url(./Components/document-content/index.css);
+@import url(./Components/Header/header.css);
+@import url(./Components/images/image.css);
+@import url(./Components/alerts/alert.css);
+@import url(./Components/avatars/avatar.css);
+@import url(./Components/badges/badges.css);
+@import url(./Components/buttons/btn.css);
+@import url(./Components/clCards/card.css);
+@import url(./Components/iframe/iframe.css);
+@import url(./Components/inputs/input.css);
+
+
+

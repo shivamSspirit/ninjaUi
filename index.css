@@ -1,11 +1,9 @@
 
 @import url(./theme/theme.css);
-
-
 @import url(./Components//buttons/btn.css);
 @import url(./Components/Header/header.css);
 @import url(./Components/images/image.css);
-@import url(./Components//document-content/index.css);
+@import url(./Components/document-content/index.css);
 
 * {
 	box-sizing: border-box;
