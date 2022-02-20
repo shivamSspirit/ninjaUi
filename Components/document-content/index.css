@@ -1,0 +1,131 @@
+
+@import url(../../theme/theme.css);
+@import url(../Header/header.css);
+@import url(../../theme/heading.css);
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: grid;
+	height: 100vh;
+	grid-gap: 5px;
+
+	grid-template-areas:
+		"header header header header header"
+		"aside  main   main   main   main"
+		"aside  main   main   main   main"
+		"aside  main   main   main   main"
+		"aside  main   main   main   main"
+		"aside  main   main   main   main"
+		"aside  main   main   main   main";
+}
+
+
+.header {
+	grid-area: header;
+	background-color: var(--default-color);
+}
+
+.img-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.img {
+	width: 100%;
+	height: 10rem;
+}
+
+.aside {
+	background-color: var(--default-color);
+	grid-area: aside;
+	color: black;
+	overflow-y: hidden;
+}
+
+.cl-screens {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0.3rem;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--main-txt-color);
+}
+
+.active,
+.link:hover {
+	background-color: black;
+	color: #fff;
+}
+
+.content-collapse {
+	padding: 0 20px;
+	display: none;
+	overflow: hidden;
+	background-color: var(--primary-color);
+	color: var(--default-color);
+	margin-bottom: 0.5rem;
+}
+
+.getting-started {
+	list-style: none;
+}
+
+.p0-screens {
+	list-style: none;
+}
+
+.p1-screens {
+	list-style: none;
+}
+
+.li-a {
+	text-decoration: none;
+	color: var(--default-color);
+	font-size: var(--side-txt-size);
+	font-weight: var(--side-text-weight);
+}
+.main {
+	background-color: var(--default-color);
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.content {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.heading {
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 500px) {
+	#container {
+		grid-template-columns: 2fr;
+		grid-template-areas:
+			"header"
+			"aside"
+			"main";
+	}
+}
