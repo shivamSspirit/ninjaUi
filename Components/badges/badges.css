@@ -1,0 +1,285 @@
+@import url(../../theme/theme.css);
+
+body {
+	width: fit-content;
+	height: fit-content;
+}
+
+/* badges */
+
+.badges {
+	display: flex;
+	flex-direction: column;
+}
+
+/* avatar badges */
+.avatar-badges {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	padding: 1.5rem;
+}
+
+.pop-av {
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.title-badge {
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--primary-color);
+}
+
+.paragraph-badge {
+	font-size: var(--main-text-size);
+	font-weight: var(--main-text-weight);
+	color: var(--primary-color);
+}
+
+.badge-container {
+	color: rgb(124, 71, 71);
+	text-decoration: none;
+	padding: 15px 26px;
+	position: relative;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.avatar-lg {
+	border-radius: 50%;
+	border: solid 1.5px blue;
+	width: 11rem;
+	height: 11rem;
+	background-color: black;
+}
+
+.avatar-md {
+	border-radius: 50%;
+	border: solid 1.5px blue;
+	width: 7rem;
+	height: 7rem;
+	background-color: blue;
+}
+
+.avatar-sm {
+	border-radius: 50%;
+	border: solid 1.5px blue;
+	width: 4rem;
+	height: 4rem;
+	background-color: aquamarine;
+}
+
+.status-online {
+	position: absolute;
+	top: 170px;
+	right: 53px;
+	height: 0.6rem;
+	width: 0.6rem;
+	border-radius: 50%;
+	background-color: green;
+	color: rgb(37, 35, 35);
+	border: 1.5px solid white;
+}
+
+.status-offline {
+	position: absolute;
+	top: 105px;
+	right: 33.5px;
+	height: 0.7rem;
+	width: 0.6rem;
+	border-radius: 50%;
+	background-color: red;
+	color: rgb(37, 35, 35);
+	border: 1.5px solid white;
+}
+
+.status-idle {
+	position: absolute;
+	top: 68px;
+	right: 33px;
+	height: 0.6rem;
+	width: 0.6rem;
+	border-radius: 50%;
+	background-color: rgb(201, 201, 198);
+	color: rgb(37, 35, 35);
+	border: 1.5px solid white;
+}
+
+/* icon-number badges */
+
+.icon-badges {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	padding: 1.5rem;
+}
+
+.pop-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.icon-badge-container {
+	margin: 15px 26px;
+	position: relative;
+	display: inline-block;
+}
+
+.icon-lg {
+	width: 8rem;
+	height: 8rem;
+}
+
+.icon-md {
+	width: 5rem;
+	height: 5rem;
+}
+
+.icon-sm {
+	width: 3rem;
+	height: 3rem;
+}
+
+.status-number-email {
+	position: absolute;
+	top: 1.5rem;
+	right: 0.3rem;
+	height: 1.2rem;
+	width: 1.2rem;
+	border-radius: 50%;
+	background-color: rgb(189, 59, 8);
+	color: rgb(37, 35, 35);
+	border: 1.5px solid white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.status-number-cart {
+	position: absolute;
+	top: 0.3rem;
+	right: -0.4rem;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	background-color: rgb(202, 15, 62);
+	color: rgb(37, 35, 35);
+	border: 1.5px solid white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.status-number-menu {
+	position: absolute;
+	top: 0rem;
+	right: -0.2rem;
+	height: 1rem;
+	width: 0.9rem;
+	border-radius: 50%;
+	background-color: rgb(55, 0, 128);
+	color: rgb(27, 201, 192);
+	border: 1.5px solid white;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* text-badges */
+
+.txt-badges {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.pop-txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.txt-badge-container {
+	margin: 15px 26px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.txt {
+	line-height: 10%;
+}
+
+.status-txt-head {
+	position: absolute;
+	top: 0.6em;
+	left: 15em;
+	background-color: rgb(55, 0, 128);
+	color: rgb(27, 201, 192);
+	border: 1.5px solid rgb(55, 0, 128);
+	text-align: center;
+	cursor: pointer;
+	border-radius: 20%;
+	height: 1.4rem;
+	width: 2.5rem;
+	font-weight: 600;
+}
+
+.status-txt-p0 {
+	position: absolute;
+	top: 0.8em;
+	left: 13em;
+	background-color: rgb(163, 152, 179);
+	color: rgb(7, 87, 83);
+	border: 1.5px solid rgb(55, 0, 128);
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10%;
+	height: 1.4rem;
+	width: 2.5rem;
+	font-weight: 600;
+}
+
+.status-txt-p0:hover {
+	filter: contrast(40%);
+	background-color: rgb(138, 79, 226);
+	color: rgb(28, 31, 30);
+}
+
+.status-txt-p1 {
+	position: absolute;
+	top: 0.3em;
+	left: 14.5em;
+	background-color: rgb(131, 67, 226);
+	color: rgb(35, 7, 87);
+	text-align: center;
+	cursor: pointer;
+	height: 1.3rem;
+	width: 2.5rem;
+	padding: 3px 6px;
+	font-weight: 600;
+	border-radius: 12rem;
+}
+
+.bad {
+	background-color: rgb(48, 45, 51);
+	color: rgb(216, 206, 233);
+}
+
+.good {
+	background-color: rgb(131, 67, 226);
+	color: rgb(35, 7, 87);
+}

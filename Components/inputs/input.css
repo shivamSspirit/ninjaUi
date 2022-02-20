@@ -1,0 +1,133 @@
+@import url(../../theme/theme.css);
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.single-input {
+	background-color: black;
+	width: 50%;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+.head-form {
+	color: var(--default-color);
+}
+
+.med {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+.label {
+	font-size: medium;
+	font-weight: 550;
+	color: var(--default-color);
+}
+
+.input {
+	width: 100%;
+	height: 2.5rem;
+	border: 1.2px solid rgb(77, 75, 75);
+	border-radius: 4px;
+	/* background-color: rgb(233, 233, 233); */
+	font-size: small;
+	font-weight: 520;
+	color: rgb(90, 88, 88);
+}
+
+.input-error {
+	border: 1.5px solid rgb(179, 13, 13);
+	background-color: rgb(247, 181, 181);
+}
+
+.input-email {
+	position: relative;
+}
+
+.btn {
+	width: 4rem;
+	height: 2rem;
+	border-radius: 4px;
+	font-size: medium;
+	font-weight: 550;
+	color: var(--default-color);
+}
+
+.form-icon {
+	max-width: 1.5rem;
+	position: absolute;
+	right: 18rem;
+	top: 14.9rem;
+}
+
+.form-icon-warning {
+	top: 10.7rem;
+}
+
+.form-icon-disable {
+	top: 15.5rem;
+}
+
+.checkbox {
+	background-color: black;
+	width: 50%;
+	margin: 0 auto;
+	color: var(--default-color);
+	padding: 1.5rem;
+}
+
+.checks {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+.radios {
+	background-color: black;
+	width: 50%;
+	margin: 0 auto;
+	color: var(--default-color);
+	padding: 1.5rem;
+}
+
+.redios {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+	.form-icon {
+		max-width: 1.5rem;
+		position: absolute;
+		right: 14.4rem;
+		top: 14.1rem;
+	}
+
+	.form-icon-warning {
+		top: 9.3rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.form-icon {
+		max-width: 1.5rem;
+		position: absolute;
+		right: 10rem;
+		top: 14.1rem;
+	}
+
+	.form-icon-warning {
+		top: 9.3rem;
+	}
+}

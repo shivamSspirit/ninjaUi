@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./avatar.css" />
+<script
+src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+defer=""></script>
+<title>Avatars</title>
+</head>
+<body>
+<div class="avatars">
+<div class="default-avatars">
+<div class="default">
+<h2 class="title-avatar">
+   Default avatar
+</h2>
+<p class="paragraph-avatar">
+An avatar can be used for graphical representation of a person. In most of the applicantions it is used to show display pictures or profile pictures of an individual.
+</p>
+<div class="contents">
+<img class="avatar avatar-lg" src="../../images/svgs/men-1.svg" alt="" />
+<img class="avatar avatar-md" src="../../images/svgs/men-1.svg" alt="" />
+<img class="avatar avatar-sm" src="../../images/svgs/men-1.svg" alt="" />
+</div>
+<div>
+<pre class="prettyprint lang-html" id='quine-0'>
+<code>
+<img class="avatar avatar-lg" src="../../images/svgs/men-1.svg" alt="" />
+<img class="avatar avatar-md" src="../../images/svgs/men-1.svg" alt="" />
+<img class="avatar avatar-sm" src="../../images/svgs/men-1.svg" alt="" />
+</code>
+</pre>
+</div>
+</div> 
+</div>
+<div class="square-avatars">
+<div class="square">
+<h2 class="title-avatar">
+Square avatar
+ </h2>
+ <p class="paragraph-avatar">
+ An avatar can be used for graphical representation of a person. In most of the applicantions it is used to show display pictures or profile pictures of an individual.
+ </p>
+<div class="contents">
+<img class="sq-avatar sq-avatar-lg" src="../../images/svgs/men-2.svg" alt="" />
+<img class="sq-avatar sq-avatar-md" src="../../images/svgs/men-2.svg" alt="" />
+<img class="sq-avatar sq-avatar-sm" src="../../images/svgs/men-2.svg" alt="" />
+</div>
+<div>
+<pre class="prettyprint lang-html" id='quine-1'>
+<code>
+<img class="sq-avatar sq-avatar-lg" src="../../images/svgs/men-2.svg" alt="" />
+<img class="sq-avatar sq-avatar-md" src="../../images/svgs/men-2.svg" alt="" />
+<img class="sq-avatar sq-avatar-sm" src="../../images/svgs/men-2.svg" alt="" />
+</code>
+</pre>
+</div>
+</div>   
+</div>
+<div class="txt-avatars">
+<div class="text-ava">
+<h2 class="title-avatar">
+Text avatar
+ </h2>
+ <p class="paragraph-avatar">
+ An avatar can be used for graphical representation of a person. In most of the applicantions it is used to show display pictures or profile pictures of an individual.
+ </p>
+</div>
+<div class="avas">
+<div class="txt-avatar txt-lg">
+<span class="txt">sss</span>
+</div>
+<div class="txt-avatar txt-md">
+<span class="txt">sss</span>
+</div>
+<div class="txt-avatar txt-sm">
+<span class="txt">ss</span>
+</div>
+</div>
+<div>
+<pre class="prettyprint lang-html" id='quine-2'>
+<code>
+<div class="avas">
+<div class="txt-avatar txt-lg">
+<span class="txt">sss</span>
+</div>
+<div class="txt-avatar txt-md">
+<span class="txt">sss</span>
+</div>
+<div class="txt-avatar txt-sm">
+<span class="txt">ss</span>
+</div>
+</div>
+</code>
+</pre>
+</div>
+</div>
+</div> 
+<script type="text/javascript">
+	
+(function () {
+	function htmlEscape(s) {
+return s
+	.replace(/&/g, "&amp;")
+	.replace(/</g, "&lt;")
+	.replace(/>/g, "&gt;");
+	}
+	// this page's own source code
+	var quineHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine-0').innerHTML + "\n<\/html>\n");
+var quineHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine-1').innerHTML + "\n<\/html>\n");
+var quineHtmlTwo = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine-2').innerHTML + "\n<\/html>\n");
+	// Highlight the operative parts:
+	quineHtml = quineHtml.replace(
+/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+'<span class="operative">$&<\/span>'
+	);
+	// insert into PRE
+	document.getElementById("quine-0").innerHTML = quineHtml;
+
+quineHtmlOne = quineHtmlOne.replace(
+/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+'<span class="operative">$&<\/span>'
+	);
+	// insert into PRE
+	document.getElementById("quine-1").innerHTML = quineHtmlOne;
+
+quineHtmlTwo = quineHtmlTwo.replace(
+/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+'<span class="operative">$&<\/span>'
+	);
+	// insert into PRE
+	document.getElementById("quine-2").innerHTML = quineHtmlTwo;
+})();
+	</script>
+
+</body>
+
+</html>
