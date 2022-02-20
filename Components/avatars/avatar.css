@@ -1,0 +1,156 @@
+@import url(../../theme/theme.css);
+
+/* rounded avatars */
+
+.default-avatars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	padding: 1.5rem;
+}
+
+.default {
+	display: flex;
+	flex-direction: column;
+}
+
+.square {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-ava {
+	display: flex;
+	flex-direction: column;
+}
+
+.avas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.title-avatar {
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--primary-color);
+}
+
+.paragraph-avatar {
+	font-size: var(--main-text-size);
+	font-weight: var(--main-text-weight);
+	color: var(--primary-color);
+}
+
+.contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.avatar {
+	border-radius: 50%;
+	border: 0.3rem solid black;
+	margin-left: 30px;
+	display: block;
+}
+
+.avatar-lg {
+	width: 11rem;
+	height: 11rem;
+}
+
+.avatar-md {
+	width: 7rem;
+	height: 7rem;
+}
+
+.avatar-sm {
+	width: 4rem;
+	height: 4rem;
+}
+
+/* sqaure avatars */
+
+.square-avatars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	padding: 1.5rem;
+}
+
+.sq-avatar {
+	border: 0.3rem solid black;
+	margin-left: 30px;
+	display: block;
+}
+
+.sq-avatar-lg {
+	width: 11rem;
+	height: 11rem;
+}
+
+.sq-avatar-md {
+	width: 7rem;
+	height: 7rem;
+}
+
+.sq-avatar-sm {
+	width: 4rem;
+	height: 4rem;
+}
+
+/* text avatars */
+
+.txt-avatars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.txt-avatar {
+	border: 0.1rem solid var(--primary-color);
+	border-radius: 50%;
+	margin-left: 30px;
+	background-color: var(--default-color);
+	display: block;
+	text-align: center;
+}
+
+.txt-lg {
+	width: 12rem;
+	height: 12rem;
+	position: relative;
+	font-size: xx-large;
+	font-weight: 750;
+}
+
+.txt-md {
+	width: 8rem;
+	height: 8rem;
+	position: relative;
+	font-size: larger;
+	font-weight: 600;
+}
+
+.txt-sm {
+	width: 4rem;
+	height: 4rem;
+	position: relative;
+	font-size: large;
+	font-weight: 400;
+}
+
+.txt {
+	position: absolute;
+	top: 36%;
+	left: 42%;
+}
