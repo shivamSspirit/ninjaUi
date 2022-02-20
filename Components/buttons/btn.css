@@ -1,0 +1,247 @@
+@import url(../../theme/theme.css);
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons div {
+	/* margin-top: 30px; */
+}
+
+/* default button */
+.btn {
+	padding: 1rem 2rem;
+	margin: 1rem;
+	border-radius: 5px;
+	background-color: var(--default-color);
+	border: none;
+	font-size: medium;
+	font-family: "Montserrat", sans-serif;
+	color: var(--primary-color);
+}
+
+/* primary button */
+
+.primary-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.pri-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.title-btn {
+	font-size: var(--main-head-size);
+	font-weight: var(--main-head-weight);
+	color: var(--primary-color);
+}
+
+.paragraph-btn {
+	font-size: var(--main-text-size);
+	font-weight: var(--main-text-weight);
+	color: var(--primary-color);
+}
+
+.lol-pri {
+}
+
+.pri-code {
+}
+
+.btn-primary {
+	background-color: aliceblue;
+	border: 1px solid teal;
+}
+
+.btn-secondary {
+	background-color: rgb(221, 239, 247);
+	border: none;
+	color: var(--secondary-color);
+}
+
+.btn-error {
+	background-color: red;
+	color: white;
+}
+
+.btn-primary:hover {
+	filter: brightness(130%);
+	cursor: pointer;
+	color: var(--hover-primary-color);
+}
+
+.btn-success {
+	background-color: green;
+	color: white;
+}
+
+/* outline buttons */
+
+.outline-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.out-buttons {
+}
+
+.lol-out {
+}
+
+.out-code {
+}
+
+.btn-outline {
+	background-color: var(--default-color);
+	border: 2px solid var(--primary-color);
+	/* color: var(--secondary-color); */
+
+	/* border-radius: 4px; */
+	color: var(--secondary-color);
+}
+
+.btn-outline:hover {
+	color: var(--default-color);
+	background-color: var(--primary-color);
+}
+
+.outline-primary {
+	background-color: aliceblue;
+	border: 2px solid rgb(58, 4, 88);
+	color: rgb(58, 4, 88);
+}
+
+.outline-secondary {
+	background-color: aliceblue;
+	border: 2px solid rgb(52, 214, 214);
+	color: rgb(52, 214, 214);
+}
+
+.outline-error {
+	background-color: aliceblue;
+	border: 2px solid red;
+	color: red;
+}
+
+.outline-success {
+	background-color: aliceblue;
+	border: 2px solid green;
+	color: green;
+}
+
+/* link button  */
+
+.link-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.link-btn {
+}
+
+.lol-link {
+	margin-top: 1rem;
+}
+
+.link-code {
+	margin-top: 1rem;
+}
+
+.link-default {
+	background-color: transparent;
+	border: 1.5px solid blue;
+	color: blue;
+}
+
+.link-primary {
+	background-color: transparent;
+	border: 1.5px solid blue;
+	color: blue;
+}
+
+.link-secondary {
+	background-color: transparent;
+	border: 1.5px solid rgb(232, 232, 238);
+	color: rgb(100, 100, 122);
+}
+
+.link-default:hover {
+	filter: brightness(150%);
+	cursor: pointer;
+	background-color: rgb(124, 124, 221);
+}
+
+.link-default:visited {
+	filter: blur(20%);
+	color: rgb(15, 2, 27);
+}
+
+.link-primary:hover {
+	filter: brightness(50%);
+	color: rgb(175, 141, 207);
+}
+
+.link-secondary:active {
+	filter: brightness(50%);
+	color: rgb(214, 23, 39);
+}
+
+/* icon buttons */
+
+.icon-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.lol-icon {
+	display: flex;
+	flex-direction: row;
+}
+
+.lol-icon .btn-icon {
+	margin: 0.7rem;
+}
+
+.btn-icon {
+	width: 2rem;
+	height: 2rem;
+}
+
+.btn-icon-floated {
+	width: 2rem;
+	height: 2rem;
+	margin: auto 0;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+}
+
+.floted {
+	border: 1.5px solid rgb(141, 114, 114);
+	width: max-content;
+	border-radius: 50%;
+	background-color: rgb(206, 156, 95);
+	width: 3.5rem;
+	height: 3.5rem;
+	position: relative;
+	margin-right: 1rem;
+}
