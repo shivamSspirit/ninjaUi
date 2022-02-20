@@ -30,10 +30,6 @@
 
 }
 
-.default-card{
-
-}
-
 .title-card{
 	font-size: var(--main-head-size);
 	font-weight: var(--main-head-weight);
@@ -176,12 +172,6 @@
 	.container {
 		display: block;
 		width: 100%;
-	}
-}
-
-@media screen and (min-width: 900px) {
-	.container {
-		/* width: 33.33333%; */
 	}
 }
 
