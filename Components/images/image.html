@@ -57,7 +57,6 @@ defer=""></script>
 
 
 <script type="text/javascript">
-		//<![CDATA[
 		(function () {
 			function htmlEscape(s) {
 				return s
@@ -67,7 +66,7 @@ defer=""></script>
 			}
 			// this page's own source code
 			var imgHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-0').innerHTML + "\n<\/html>\n");
-var imgHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
+            var imgHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
 
 			// Highlight the operative parts:
 			imgHtml = imgHtml.replace(
@@ -77,7 +76,7 @@ var imgHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementByI
 			// insert into PRE
 			document.getElementById("img-0").innerHTML = imgHtml;
 
-imgHtmlOne = imgHtmlOne.replace(
+            imgHtmlOne = imgHtmlOne.replace(
 				/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
 				'<span class="operative">$&<\/span>'
 			);
@@ -85,7 +84,7 @@ imgHtmlOne = imgHtmlOne.replace(
 			document.getElementById("img-1").innerHTML = imgHtmlOne;
 
 		})();
-			//]]>
+		
 	</script>
 
 </body>
