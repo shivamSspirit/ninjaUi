@@ -26,11 +26,11 @@
 			</div>
 			<div class="socials">
 				<span><a href="https://github.com/shivamsoni00"><img src='../../images/jpeg/github.png'
-							class="github" /></a></span>
+							class="social-icons" /></a></span>
 				<span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img src='../../images/jpeg/linkedin.png'
-							class="linkedin" /></a></span>
+							class="social-icons" /></a></span>
 				<span><a href="https://twitter.com/ShivamSspirit">
-						<img src='../../images/jpeg/twitter.png' class="twitter" /></span>
+						<img src='../../images/jpeg/twitter.png' class="social-icons" /></span>
 				</a>
 			</div>
 		</header>
@@ -78,13 +78,9 @@
 			</div>
 		</aside>
 		<main class="main">
-		
 			<iframe src="../iframe/iframe.html" name="iframe_a" height="100%" width="100%" title="Iframe Example" style="border:none;"> 
-			</iframe>
-		
-			
+			</iframe>	
 		</main>
-		<!-- <footer class="footer">Footer</footer> -->
 	</section>
 	<!-- script for index -->
 	<script type="text/javascript">
@@ -184,10 +180,6 @@
 					.replace(/</g, "&lt;")
 					.replace(/>/g, "&gt;");
 			}
-			console.log(
-				"sdhasjdjas",
-				document.documentElement.lastChild.childNodes[2]
-			);
 			// this page's own source code
 			var quineHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine').innerHTML + "\n<\/html>\n");
 			// Highlight the operative parts:
@@ -198,7 +190,6 @@
 			// insert into PRE
 			document.getElementById("quine").innerHTML = quineHtml;
 		})();
-			//]]>
 	</script>
 	<!-- script for codeBox end -->
 </body>

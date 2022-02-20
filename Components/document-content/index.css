@@ -24,15 +24,6 @@ body {
 		"aside  main   main   main   main";
 }
 
-@media only screen and (max-width: 500px) {
-	#container {
-		grid-template-columns: 2fr;
-		grid-template-areas:
-			"header"
-			"aside"
-			"main";
-	}
-}
 
 .header {
 	grid-area: header;
@@ -54,9 +45,6 @@ body {
 	grid-area: aside;
 	color: black;
 	overflow-y: hidden;
-}
-
-.sidebar {
 }
 
 .cl-screens {
@@ -132,7 +120,12 @@ body {
 	color: var(--main-text-color);
 }
 
-/* .footer {
-	background-color: var(--default-color);
-	grid-area: footer;
-} */
+@media only screen and (max-width: 500px) {
+	#container {
+		grid-template-columns: 2fr;
+		grid-template-areas:
+			"header"
+			"aside"
+			"main";
+	}
+}
