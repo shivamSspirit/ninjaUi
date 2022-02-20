@@ -1,0 +1,97 @@
+@import url(../../theme/theme.css);
+
+body {
+	box-sizing: content-box;
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	height: auto;
+	background-color: var(--default-color);
+	color: var(--primary-color);
+    padding: 1rem;
+    position: relative;
+}
+
+.icon-container {
+	flex-basis: 14%;
+	display: flex;
+	padding-left: 2rem;
+}
+
+.icon {
+	width: 3rem;
+	height: 3rem;
+	margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+	flex-basis: 20%;
+	position: absolute;
+	top: .6rem;
+}
+
+.home {
+	flex-basis: 5%;
+	font-size: var(--header-text-size);
+	font-weight: var(--header-text-weight);
+    position: absolute;
+    left: 11rem;
+    top: 1.3rem;
+
+}
+
+.home:hover {
+	color: var(--header-text-hover-txt-color);
+	background-color: var(--header-text-hover-bg-color);
+}
+
+.document {
+	flex-basis: 5%;
+	font-size: var(--header-text-size);
+	font-weight: var(--header-text-weight);
+    position: absolute;
+    left: 15rem;
+    top: 1.3rem;
+}
+
+.document:hover {
+	color: var(--header-text-hover-txt-color);
+	background-color: var(--header-text-hover-bg-color);
+}
+
+.navs {
+	text-decoration: none;
+	color: var(--primary-color);
+} 
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	width: 71%;
+	justify-content: end;
+	gap: 1.1rem;
+	position: absolute;
+	top: 1.6rem;
+	right: 3.3rem;
+}
+
+.social-icons{
+	max-width: 2rem;
+	max-height: 2rem;
+}
+
+
+@media only screen and (max-width: 530px){
+   .home{
+   display: none;
+   }
+
+   .document{
+	display: none;
+   }
+}
