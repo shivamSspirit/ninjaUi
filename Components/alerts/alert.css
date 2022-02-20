@@ -10,34 +10,24 @@ body {
 	flex-direction: column;
 }
 
-/* .alerts div{
-    margin-top: 0.5rem;
-} */
 
 /* basic alert */
 
 .basic-alerts {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* justify-items: center; */
 	padding: 1.5rem;
 }
 
 .basic-alt-info {
 	display: flex;
 	flex-direction: column;
-	/* float: left; */
-	/* background-color: blueviolet; */
-	/* margin: 0; */
 }
 
 .Basic-Alt {
 	font-size: var(--main-head-size);
 	font-weight: var(--main-head-weight);
 	color: var(--primary-color);
-	/* float: left; */
 }
 
 .description {
@@ -50,8 +40,6 @@ body {
 	margin-top: 1rem;
 }
 
-.Basic-Alt {
-}
 
 .alert-error-container {
 	display: flex;
@@ -127,15 +115,9 @@ body {
 .alert-description {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center;
-	align-items: center;
-	justify-items: center; */
 	padding: 1.5rem;
 }
 
-/* .alert-description div {
-	margin-top: 1rem;
-} */
 
 .alert-error-title {
 	display: flex;
@@ -242,9 +224,6 @@ body {
 .outline-alerts {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center;
-	align-items: center;
-	justify-items: center; */
 	padding: 1.5rem;
 }
 
@@ -330,9 +309,6 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	/* justify-content: center;
-	align-items: center;
-	justify-items: center; */
 	padding: 1.5rem;
 }
 
