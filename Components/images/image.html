@@ -2,27 +2,28 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./image.css" />
-<script
-src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
-defer=""></script>
-<title>Images</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./image.css" />
+	<script
+		src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+		defer=""></script>
+	<title>Images</title>
 </head>
+
 <body>
-<div class="responsive-images">
-<div class="round-images">
-<h3 class="round">Round Images</h3>
-<div class="round-container">
-<div class="res-square">
-<img class="round-1" src="../../images/jpeg/bird.jpg" alt="" />
-</div>
-<div class="res-square"><img class="round-2" src="../../images/jpeg/cash.jpg" alt="" /></div>
-</div>
-<div class="img-code">
-<pre class="prettyprint lang-html" id='img-0'>
+	<div class="responsive-images">
+		<div class="round-images">
+			<h3 class="round">Round Images</h3>
+			<div class="round-container">
+				<div class="res-square">
+					<img class="round-1" src="../../images/jpeg/bird.jpg" alt="" />
+				</div>
+				<div class="res-square"><img class="round-2" src="../../images/jpeg/cash.jpg" alt="" /></div>
+			</div>
+			<div class="img-code">
+				<pre class="prettyprint lang-html" id='img-0'>
 <code>
 <div class="round-container">
 <div class="res-square">
@@ -31,18 +32,18 @@ defer=""></script>
 <div class="res-square"><img class="round-2" src="../../images/jpeg/cash.jpg" alt="" /></div>
 </div>
 </code></pre>
-</div>
-</div>
-<div class="square-images">
-<h3 class="square">Responsive Images</h3>
-<div class="square-container">
-<div class="res-square">
-<img class="square-1" src="../../images/jpeg/navi.jpg" alt="" />
-</div>
-<div class="res-square"><img class="square-2" src="../../images/jpeg/1millidollars.jpg" alt="" /></div>
-</div>
-<div class="img-code">
-<pre class="prettyprint lang-html" id='img-1'>
+			</div>
+		</div>
+		<div class="square-images">
+			<h3 class="square">Responsive Images</h3>
+			<div class="square-container">
+				<div class="res-square">
+					<img class="square-1" src="../../images/jpeg/navi.jpg" alt="" />
+				</div>
+				<div class="res-square"><img class="square-2" src="../../images/jpeg/1millidollars.jpg" alt="" /></div>
+			</div>
+			<div class="img-code">
+				<pre class="prettyprint lang-html" id='img-1'>
 <code>
 <div class="square-container">
 <div class="res-square">
@@ -51,12 +52,12 @@ defer=""></script>
 <div class="res-square"><img class="square-2" src="../../images/jpeg/1millidollars.jpg" alt="" /></div>
 </div>
 </code></pre>
-</div>
-</div>
-</div>
+			</div>
+		</div>
+	</div>
 
 
-<script type="text/javascript">
+	<script type="text/javascript">
 		(function () {
 			function htmlEscape(s) {
 				return s
@@ -66,7 +67,7 @@ defer=""></script>
 			}
 			// this page's own source code
 			var imgHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-0').innerHTML + "\n<\/html>\n");
-            var imgHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
+			var imgHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
 
 			// Highlight the operative parts:
 			imgHtml = imgHtml.replace(
@@ -76,7 +77,7 @@ defer=""></script>
 			// insert into PRE
 			document.getElementById("img-0").innerHTML = imgHtml;
 
-            imgHtmlOne = imgHtmlOne.replace(
+			imgHtmlOne = imgHtmlOne.replace(
 				/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
 				'<span class="operative">$&<\/span>'
 			);
@@ -84,7 +85,7 @@ defer=""></script>
 			document.getElementById("img-1").innerHTML = imgHtmlOne;
 
 		})();
-		
+
 	</script>
 
 </body>

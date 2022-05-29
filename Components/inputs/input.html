@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./input.css" />
-<script
-src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
-defer=""></script>
-<title>Forms and Inputs</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input.css" />
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+        defer=""></script>
+    <title>Forms and Inputs</title>
 </head>
+
 <body>
-<div>
-<div class="single-input">
-<h3 class="head-form">User form</h3>
-<form id="my-form" onsubmit="">
-<div class="med">
-<label class="label" for="name"> Name </label>
-<input
-required
-class="input"
-type="text"
-name="username"
-/>
-</div>
-<div class="med">
-<label class="label" for="number"> Number </label>
-<input
-required
-class="input"
-type="tel"
-name="mobile"
-/>
-<img
-class="form-icon form-icon-warning"
-src="../../images/svgs/warning.svg"
-alt="number"
-/>
-</div>
-<div class="med">
-<label class="label" for="Email"> Email </label>
-<input
-disabled
-class="input input-email"
-type="email"
-name="email"
-/>
-<img
-class="form-icon form-icon-disable"
-src="../../images/svgs/email.svg"
-alt="email"
-/>
-</div>
-<div class="med">
-<button class="btn" type="submit" onclick="">Click</button>
-</div>
-</form>
-</div>
-<div class="checkbox">
-<h3>checkbox</h3>
-<div class="checks">
-<input type="checkbox" class="check" checked aria-checked="true"/>
-<input type="checkbox" class="check" checked aria-checked="true"/>
-</div>
-</div>
-<div class="radios">
-<h3>radios</h3>
-<div class="redios">
-<input type="radio" class="radio" />
-<input type="radio" class="radio" />
-</div>
-</div>
-<pre class="prettyprint lang-html" id='form-0'>
+    <div>
+        <div class="single-input">
+            <h3 class="head-form">User form</h3>
+            <form id="my-form" onsubmit="">
+                <div class="med">
+                    <label class="label" for="name"> Name </label>
+                    <input required class="input" type="text" name="username" />
+                </div>
+                <div class="med">
+                    <label class="label" for="number"> Number </label>
+                    <input required class="input" type="tel" name="mobile" />
+                    <img class="form-icon form-icon-warning" src="../../images/svgs/warning.svg" alt="number" />
+                </div>
+                <div class="med">
+                    <label class="label" for="Email"> Email </label>
+                    <input disabled class="input input-email" type="email" name="email" />
+                    <img class="form-icon form-icon-disable" src="../../images/svgs/email.svg" alt="email" />
+                </div>
+                <div class="med">
+                    <button class="btn" type="submit" onclick="">Click</button>
+                </div>
+            </form>
+        </div>
+        <div class="checkbox">
+            <h3>checkbox</h3>
+            <div class="checks">
+                <input type="checkbox" class="check" checked aria-checked="true" />
+                <input type="checkbox" class="check" checked aria-checked="true" />
+            </div>
+        </div>
+        <div class="radios">
+            <h3>radios</h3>
+            <div class="redios">
+                <input type="radio" class="radio" />
+                <input type="radio" class="radio" />
+            </div>
+        </div>
+        <pre class="prettyprint lang-html" id='form-0'>
 <code>
 <div class="single-input">
 <h3 class="head-form">User form</h3>
@@ -133,76 +112,77 @@ alt="email"
 </div>
 </div>
 </code></pre>
-</div>
-<script type="text/javascript">
-var form = document.getElementById("my-form").elements;
+    </div>
+    <script type="text/javascript">
+        var form = document.getElementById("my-form").elements;
 
-           var obj={
-             name:'',
-             mobile:'',
-             email:''
-            }
-           
-for (let i = 0; i < form.length; i++) {
-form[i].addEventListener("change", (e) => {
-                        if(form[i].name === "username"){
-                           obj = {...obj,name:e.target.value}
-                           if(e.target.value.length<3&&typeof obj.name!=="string"){
-                               if(form[i].classlist.contains('input')){
-                                   console.log('helloo')
-                                   form[i].classlist.add('error-input')
-                               }
-                           }
-                          
+        var obj = {
+            name: '',
+            mobile: '',
+            email: ''
+        }
+
+        for (let i = 0; i < form.length; i++) {
+            form[i].addEventListener("change", (e) => {
+                if (form[i].name === "username") {
+                    obj = { ...obj, name: e.target.value }
+                    if (e.target.value.length < 3 && typeof obj.name !== "string") {
+                        if (form[i].classlist.contains('input')) {
+                            console.log('helloo')
+                            form[i].classlist.add('error-input')
                         }
-                        if(form[i].name === "mobile"){
-                            obj = {...obj,mobile:e.target.value}
-                            if(e.target.value.length<10&&typeof obj.mobile!=="number"){
-                               if(form[i].classlist.contains('input')){
-                                   form[i].classlist.add('error-input')
-                               }
-                           }
+                    }
+
+                }
+                if (form[i].name === "mobile") {
+                    obj = { ...obj, mobile: e.target.value }
+                    if (e.target.value.length < 10 && typeof obj.mobile !== "number") {
+                        if (form[i].classlist.contains('input')) {
+                            form[i].classlist.add('error-input')
                         }
-                        if(form[i].name === "email"){
-                            obj = {...obj,email:e.target.value}
-                        }    
-});
-}
+                    }
+                }
+                if (form[i].name === "email") {
+                    obj = { ...obj, email: e.target.value }
+                }
+            });
+        }
 
 
 
-            const click = document.querySelector('.btn');
-            click.addEventListener('click',(e)=>{
-                e.preventDefault()
-alert(JSON.stringify(obj))
-            })
-</script>
+        const click = document.querySelector('.btn');
+        click.addEventListener('click', (e) => {
+            e.preventDefault()
+            alert(JSON.stringify(obj))
+        })
+    </script>
 
 
 
-<script type="text/javascript">
-//<![CDATA[
-(function () {
-function htmlEscape(s) {
-return s
-.replace(/&/g, "&amp;")
-.replace(/</g, "&lt;")
-.replace(/>/g, "&gt;");
-}
+    <script type="text/javascript">
+            //<![CDATA[
+            (function () {
+                function htmlEscape(s) {
+                    return s
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;");
+                }
 
-// this page's own source code
-var fromHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('form-0').innerHTML + "\n<\/html>\n");
-// Highlight the operative parts:
-fromHtml = fromHtml.replace(
-/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
-'<span class="operative">$&<\/span>'
-);
-// insert into PRE
-document.getElementById("form-0").innerHTML = fromHtml;
+                // this page's own source code
+                var fromHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('form-0').innerHTML + "\n<\/html>\n");
+                // Highlight the operative parts:
+                fromHtml = fromHtml.replace(
+                    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                    '<span class="operative">$&<\/span>'
+                );
+                // insert into PRE
+                document.getElementById("form-0").innerHTML = fromHtml;
 
 
-})();
+            })();
 //]]>
-</script>
+    </script>
 </body>
+
 </html>
