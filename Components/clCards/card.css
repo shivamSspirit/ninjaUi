@@ -143,6 +143,8 @@
 .content-h {
 	margin-top: -0.3rem;
 	margin-left: 0.5rem;
+	margin-bottom: .7rem;
+	padding-right: .6rem;
 }
 
 /* overlay cards */
@@ -395,14 +397,13 @@
 .product-card {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	max-width: 16rem;
-	height: 19.5rem;
+	height: 19.3rem;
 	position: relative;
 	display: block;
 	background-color: transparent;
 	margin: 1rem;
 	border: 1.3px solid gray;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+	border-radius: 4px;
 	margin-top: 1rem;
 }
 
@@ -417,8 +418,8 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 .badge {
@@ -501,6 +502,9 @@
 	background-color: rgb(67, 67, 68);
 	margin-top: 0.5rem;
 	border: none;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	margin-bottom: 0px;
 }
 
 /* second card */
@@ -517,14 +521,14 @@
 .product-card0 {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	max-width: 16rem;
-	height: 19.5rem;
+	height: 19.3rem;
 	position: relative;
 	display: block;
 	background-color: transparent;
 	margin: 1rem;
 	border: 1.3px solid gray;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+	border-radius: 4px;
+	/* border-top-right-radius: 9px; */
 	margin-top: 1rem;
 }
 
@@ -538,8 +542,8 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 .badge0 {
@@ -586,6 +590,9 @@
 	background-color: rgb(67, 67, 68);
 	margin-top: 0.5rem;
 	border: none;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
 }
 
 /* action card */
@@ -600,14 +607,14 @@
 .action-card {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	max-width: 16rem;
-	height: 19.5rem;
+	height: 19.3rem;
 	position: relative;
 	display: block;
 	background-color: transparent;
 	margin: 1rem;
 	border: 1.3px solid gray;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+	border-radius: 4px;
+	/* border-top-right-radius: 4px; */
 	margin-top:1rem;
 }
 

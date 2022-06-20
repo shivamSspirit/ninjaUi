@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./colors.css" />
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+        defer=""></script>
+    <title>Colors</title>
+</head>
+
+<body>
+
+    <div class="color-container">
+        <div class="c-head-section">
+            <h2>Colors</h2>
+            <p class="c-description">
+                convey meaning through color. In this component, you will find the color palette used to design
+                StarlingUI.
+                Note: I have set the root font-size to 10px for this library.
+                Instructions to import the Colors & Typography in your CSS or HTML:
+            </p>
+        </div>
+
+
+        <pre class="prettyprint lang-html" id="colors">
+<code>
+// Html
+
+<link rel="stylesheet" href="https://amazing-spirit.netlify.app/root.css"/>
+// Css
+
+@import url("https://amazing-spirit.netlify.app/root.css")
+</code>
+</pre>
+
+        <div class="c-items-container">
+            <div class="c-items">
+                <h4>Starling UI uses a color palette of 4 colors:</h4>
+                <div class="rows">
+                    <div class="row">
+                        <div class="row-items">
+                            <p>Darker</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Dark</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Lighter</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Light</p>
+                            <span>#2e13af</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-items">
+                            <p>Darker</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Dark</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Lighter</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Light</p>
+                            <span>#2e13af</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-items">
+                            <p>Darker</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Dark</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Lighter</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Light</p>
+                            <span>#2e13af</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-items">
+                            <p>Darker</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Dark</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Lighter</p>
+                            <span>#2e13af</span>
+                        </div>
+                        <div class="row-items">
+                            <p>Light</p>
+                            <span>#2e13af</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script for code  badges-->
+    <script type="text/javascript">
+        //<![CDATA[
+        (function () {
+            function htmlEscape(s) {
+                return s
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;");
+            }
+            console.log(
+                "sdhasjdjas",
+                document.documentElement.lastChild.childNodes[2]
+            );
+            // this page's own source code
+            var colors = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('colors').innerHTML + "\n<\/html>\n");
+            // Highlight the operative parts:
+            colors = colors.replace(
+                /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                '<span class="operative">$&<\/span>'
+            );
+
+            document.getElementById("colors").innerHTML = colors;
+        })();
+    </script>
+
+</body>
+
+</html>

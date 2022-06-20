@@ -1,0 +1,49 @@
+@import url(../../theme/theme.css);
+
+body {
+    width: fit-content;
+    height: fit-content;
+}
+
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.c-items-container {
+    width: 100%;
+}
+
+.c-items {
+    width: 90%;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.row-items {
+    background-color: rgb(4, 95, 95);
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}

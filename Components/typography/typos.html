@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./typos.css" />
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+        defer=""></script>
+    <title>Typography</title>
+</head>
+
+<body>
+    <div class="typos-container">
+        <div class="t-head-section">
+            <h2>Typos</h2>
+            <p class="t-description">
+                Instructions to import the text & Typography in your CSS or HTML:
+            </p>
+        </div>
+        <div class="sections-container">
+
+            <section class="section" id="sec-txt-size">
+                <p>spirit UI uses inter font. You can directly use the tags h1, h2, h3, h4, h5 & p or use their custom
+                    classes to get the following font-size:</p>
+                <div class="text-demos">
+                    <h1 class="h1">This Is A Heading - H1</h1>
+                    <h2 class="h2">This Is A Heading - H2</h2>
+                    <h3 class="h3">This Is A Heading - H3</h3>
+                    <h4 class="h4">This Is A Heading - H4</h4>
+                    <h5 class="h5">This Is A Heading - H5</h5>
+                    <h6 class="h6">This Is A Heading - H6</h6>
+                </div>
+
+                <div>
+                    <pre class="prettyprint lang-html" id="section-txt-size">
+        <code>
+            <div class="text-demos">
+                <h1 class="h1">This Is A Heading - H1</h1>
+                <h2 class="h2">This Is A Heading - H2</h2>
+                <h3 class="h3">This Is A Heading - H3</h3>
+                <h4 class="h4">This Is A Heading - H4</h4>
+                <h5 class="h5">This Is A Heading - H5</h5>
+                <h6 class="h6">This Is A Heading - H6</h6>
+            </div>
+        </code>
+    </pre>
+                </div>
+
+            </section>
+
+            <section class="section" id="sec-txt-weight">
+                <p>spirit UI uses inter font. You can directly use the tags dark light etc.. to use their font weights:
+                </p>
+                <div class="text-demos">
+                    <h3 class="light">Light - 333</h3>
+                    <h3 class="lighter">Lighter - 444</h3>
+                    <h3 class="meduim">Meduim - 500</h3>
+                    <h3 class="regular">Regular - 530</h3>
+                    <h3 class="bold">Bold - 640</h3>
+                    <h3 class="extrabold">Extra Bold - 699</h3>
+                </div>
+
+                <div>
+                    <pre class="prettyprint lang-html" id="section-txt-weight">
+        <code>
+            <div class="text-demos">
+                <h3 class="h3 regular">Light - 333</h3>
+                <h3 class="h3 regular">Lighter - 444</h3>
+                <h3 class="h3 regular">Meduim - 500</h3>
+                <h3 class="h3 regular">Regular - 530</h3>
+                <h3 class="h3 regular">Bold - 640</h3>
+                <h3 class="h3 regular">Extra Bold - 699</h3>
+             </div>
+        </code>
+    </pre>
+                </div>
+
+            </section>
+
+            <section class="section" id="sec-txt-colors">
+                <p>spirit UI uses inter font. You can directly use the tags primary-txt secondary-txt etc.. to use their
+                    text colors:</p>
+                <div class="text-demos">
+                    <h3 class="h3 regular txt-primary">This txt with primary color</h3>
+                    <h3 class="h3 regular txt-secondary">This txt with secondary color</h3>
+                    <h3 class="h3 regular txt-default">This txt with default color</h3>
+                    <h3 class="h3 regular txt-grey">This txt with grey color</h3>
+                    <h3 class="h3 regular txt-purple">This txt with purple color</h3>
+                </div>
+
+
+                <div>
+                    <pre class="prettyprint lang-html" id="section-txt-colors">
+            <code>
+                <div class="text-demos">
+                    <h3 class="h3 regular txt-primary">This txt with primary color</h3>
+                    <h3 class="h3 regular txt-secondary">This txt with secondary color</h3>
+                    <h3 class="h3 regular txt-default">This txt with default color</h3>
+                    <h3 class="h3 regular txt-grey">This txt with grey color</h3>
+                    <h3 class="h3 regular txt-purple">This txt with purple color</h3>
+                </div>
+            </code>
+        </pre>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- script for code  typos-->
+        <script type="text/javascript">
+            //<![CDATA[
+            (function () {
+                function htmlEscape(s) {
+                    return s
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;");
+                }
+                // this page's own source code
+                var txtsize = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('section-txt-size').innerHTML + "\n<\/html>\n");
+                var txtWeight = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('section-txt-weight').innerHTML + "\n<\/html>\n");
+                var txtColors = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('section-txt-colors').innerHTML + "\n<\/html>\n");
+                // Highlight the operative parts:
+                txtsize = txtsize.replace(
+                    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                    '<span class="operative">$&<\/span>'
+                );
+
+                document.getElementById("section-txt-size").innerHTML = txtsize;
+
+                txtWeight = txtWeight.replace(
+                    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                    '<span class="operative">$&<\/span>'
+                );
+
+                document.getElementById("section-txt-weight").innerHTML = txtWeight;
+
+                txtColors = txtColors.replace(
+                    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                    '<span class="operative">$&<\/span>'
+                );
+
+                document.getElementById("section-txt-colors").innerHTML = txtColors;
+            })();
+        </script>
+
+    </div>
+</body>
+
+</html>

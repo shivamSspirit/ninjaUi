@@ -12,8 +12,8 @@ body {
 	height: auto;
 	background-color: var(--default-color);
 	color: var(--primary-color);
-    padding: 1rem;
-    position: relative;
+	padding: 1rem;
+	position: relative;
 }
 
 .icon-container {
@@ -28,8 +28,8 @@ body {
 	margin: 0 auto;
 }
 
-.nav{
-    display: flex;
+.nav {
+	display: flex;
 	flex-basis: 20%;
 	position: absolute;
 	top: .6rem;
@@ -39,9 +39,9 @@ body {
 	flex-basis: 5%;
 	font-size: var(--header-text-size);
 	font-weight: var(--header-text-weight);
-    position: absolute;
-    left: 11rem;
-    top: 1.3rem;
+	position: absolute;
+	left: 11rem;
+	top: 1.3rem;
 
 }
 
@@ -54,9 +54,9 @@ body {
 	flex-basis: 5%;
 	font-size: var(--header-text-size);
 	font-weight: var(--header-text-weight);
-    position: absolute;
-    left: 15rem;
-    top: 1.3rem;
+	position: absolute;
+	left: 15rem;
+	top: 1.3rem;
 }
 
 .document:hover {
@@ -67,31 +67,61 @@ body {
 .navs {
 	text-decoration: none;
 	color: var(--primary-color);
-} 
+}
 
 .socials {
 	display: flex;
 	flex-direction: row;
-	width: 71%;
+	width: max-content;
 	justify-content: end;
 	gap: 1.1rem;
 	position: absolute;
 	top: 1.6rem;
 	right: 3.3rem;
+	width: 100%;
 }
 
-.social-icons{  
+.social-icons {
 	max-width: 2rem;
 	max-height: 2rem;
 }
 
+/* .hamburger {
+	width: 100%;
+	height: 60px;
+	background-color: antiquewhite;
+	display: flex;
+	position: fixed;
+} */
+/* 
+.btn-toggle-nav {
+	width: 60px;
+	height: 100%;
+	background-color: grey;
+	background-image: url(../../images/svgs/email.svg);
+}
 
-@media only screen and (max-width: 530px){
-   .home{
-   display: none;
-   }
+.asides {
+	position: fixed;
+	width: 150px;
+	height: 30px;
+	top: 100px;
+	display: flex;
+	background-color: transparent;
+}
 
-   .document{
-	display: none;
-   }
+.asides ul {
+	overflow: hidden;
+	visibility: visible;
+} */
+
+
+@media only screen and (max-width: 530px) {
+	.home {
+		display: none;
+	}
+
+	.document {
+		display: none;
+	}
 }

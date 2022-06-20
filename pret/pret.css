@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-main{
+width: 100%;
+height: 60px;
+ background-color: antiquewhite; 
+display: flex;
+ z-index: 1000; 
+ position: fixed;
+}
+
+.btn-toggle-nav{
+    width: 60px;
+    height: 100%;
+    background-color: grey; 
+    background-image: url(../images/svgs/player.svg);
+}
+
+ul {
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.show-this{
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.asides{
+    position: fixed;
+    width: 150px;
+    height: 30px;
+    top: 100px;
+    display: flex;
+    background-color: aqua;
+}
+
+
+.asidesss{
+    position: fixed;
+    width: 150px;
+    height: 30px;
+    top: 100px;
+    display: flex;
+    background-color: transparent;
+}
+
+.asides ul{
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.asidesss ul {
+    overflow: hidden;
+    visibility: visible;
+}

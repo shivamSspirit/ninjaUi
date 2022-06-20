@@ -214,9 +214,10 @@ body {
 
 .txt-badge-container {
 	margin: 15px 26px;
-	position: relative;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
+	position: relative;
 }
 
 .txt {
@@ -225,8 +226,8 @@ body {
 
 .status-txt-head {
 	position: absolute;
-	top: 0.6em;
-	left: 15em;
+	top: -0.5em;
+	left: 16.5em;
 	background-color: rgb(55, 0, 128);
 	color: rgb(27, 201, 192);
 	border: 1.5px solid rgb(55, 0, 128);
@@ -240,8 +241,8 @@ body {
 
 .status-txt-p0 {
 	position: absolute;
-	top: 0.8em;
-	left: 13em;
+	top: 0em;
+	left: 13.5em;
 	background-color: rgb(163, 152, 179);
 	color: rgb(7, 87, 83);
 	border: 1.5px solid rgb(55, 0, 128);
@@ -249,7 +250,7 @@ body {
 	cursor: pointer;
 	border-radius: 10%;
 	height: 1.4rem;
-	width: 2.5rem;
+	width: 3rem;
 	font-weight: 600;
 }
 
@@ -261,14 +262,14 @@ body {
 
 .status-txt-p1 {
 	position: absolute;
-	top: 0.3em;
-	left: 14.5em;
+	top: -0.6em;
+	left: 14.9em;
 	background-color: rgb(131, 67, 226);
 	color: rgb(35, 7, 87);
 	text-align: center;
 	cursor: pointer;
 	height: 1.3rem;
-	width: 2.5rem;
+	width: 2.8rem;
 	padding: 3px 6px;
 	font-weight: 600;
 	border-radius: 12rem;

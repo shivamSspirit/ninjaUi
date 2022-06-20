@@ -1,5 +1,11 @@
 @import url(../../theme/theme.css);
 
+
+a{
+	text-decoration: none;
+}
+
+
 .buttons {
 	display: flex;
 	flex-direction: column;
@@ -244,4 +250,17 @@
 	height: 3.5rem;
 	position: relative;
 	margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.lol-link{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	padding: 1.5rem;
+	}
 }

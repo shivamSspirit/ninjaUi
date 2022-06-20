@@ -14,26 +14,29 @@
 
 <body>
 	<section id="container">
-		<header class="header">
-			<div class="icon-container">
-				<a class="img-link" href="../../index.html"><span>
-						<img class="icon" src="../../images/jpeg/headicon.png" alt="" /></a>
-				</span>
+
+		<!-- <header> -->
+			<div class="header">
+				<div class="icon-container">
+					<a class="img-link" href="../../index.html"><span>
+							<img class="icon" src="../../images/jpeg/headicon.png" alt="" /></a>
+					</span>
+				</div>
+				<div class="nav">
+					<a href="../../index.html" class="home navs">Home</a>
+					<a href="./index.html" class="document navs">Document</a>
+				</div>
+				<div class="socials">
+					<span><a href="https://github.com/shivamsoni00"><img src='../../images/jpeg/github.png'
+								class="social-icons" /></a></span>
+					<span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img
+								src='../../images/jpeg/linkedin.png' class="social-icons" /></a></span>
+					<span><a href="https://twitter.com/ShivamSspirit">
+							<img src='../../images/jpeg/twitter.png' class="social-icons" /></span>
+				</div>
 			</div>
-			<div class="nav">
-				<a href="../../index.html" class="home navs">Home</a>
-				<a href="./index.html" class="document navs">Document</a>
-			</div>
-			<div class="socials">
-				<span><a href="https://github.com/shivamsoni00"><img src='../../images/jpeg/github.png'
-							class="social-icons" /></a></span>
-				<span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img
-							src='../../images/jpeg/linkedin.png' class="social-icons" /></a></span>
-				<span><a href="https://twitter.com/ShivamSspirit">
-						<img src='../../images/jpeg/twitter.png' class="social-icons" /></span>
-				</a>
-			</div>
-		</header>
+		<!-- </header> -->
+
 
 		<aside class="aside">
 			<div class="sidebar">
@@ -42,7 +45,8 @@
 						<a href="" class="link">Getting-started</a>
 						<div class="content-collapse">
 							<ul class="getting-started">
-								<li><a href="../iframe/iframe.html" target="iframe_a" class="li-a">-getting-Started</a>
+								<li class="li-al"><a href="../iframe/iframe.html" target="iframe_a"
+										class="li-a">-getting-Started</a>
 								</li>
 							</ul>
 						</div>
@@ -51,13 +55,20 @@
 						<a href="" class="link">P0 screens</a>
 						<div class="content-collapse">
 							<ul class="p0-screens">
-								<li><a href="../avatars/avatar.html" target="iframe_a" class="li-a">-Avatar</a></li>
-								<li><a href="../alerts/alert.html" target="iframe_a" class="li-a">-Alert</a></li>
-								<li><a href="../badges/badges.html" target="iframe_a" class="li-a">-Badges</a></li>
-								<li><a href="../buttons/btn.html" target="iframe_a" class="li-a">-Buttons</a></li>
-								<li><a href="../clCards/card.html" target="iframe_a" class="li-a">-Cards</a></li>
-								<li><a href="../images/image.html" target="iframe_a" class="li-a">-images</a></li>
-								<li><a href="../inputs/input.html" target="iframe_a" class="li-a">-inputs and forms</a>
+								<li class="li-al"><a href="../avatars/avatar.html" target="iframe_a"
+										class="li-a">-Avatar</a></li>
+								<li class="li-al"><a href="../alerts/alert.html" target="iframe_a"
+										class="li-a">-Alert</a></li>
+								<li class="li-al"><a href="../badges/badges.html" target="iframe_a"
+										class="li-a">-Badges</a></li>
+								<li class="li-al"><a href="../buttons/btn.html" target="iframe_a"
+										class="li-a">-Buttons</a></li>
+								<li class="li-al"><a href="../clCards/card.html" target="iframe_a"
+										class="li-a">-Cards</a></li>
+								<li class="li-al"><a href="../images/image.html" target="iframe_a"
+										class="li-a">-images</a></li>
+								<li class="li-al"><a href="../inputs/input.html" target="iframe_a" class="li-a">-inputs
+										and forms</a>
 								</li>
 							</ul>
 						</div>
@@ -66,13 +77,14 @@
 						<a href="" class="link">p1 screens</a>
 						<div class="content-collapse">
 							<ul class="p1-screens">
-								<li><a href="#texts" class="li-a">-Text utilities</a></li>
-								<li><a href="#Lists" class="li-a">-Lists</a></li>
-								<li><a href="#Navigation" class="li-a">-Navigation</a></li>
-								<li><a href="#modal" class="li-a">-modal</a></li>
-								<li><a href="#Ratings" class="li-a">-Ratings</a></li>
-								<li><a href="#toast" class="li-a">-Toast-notify-snackbar</a></li>
-								<li><a href="#grid" class="li-a">-simplified grid</a></li>
+								<li class="li-al"><a href="../colors/colors.html" target="iframe_a" class="li-a">-Colors</a>
+							</li>
+								<li class="li-al"><a href="../typography/typos.html" target="iframe_a" class="li-a">-Typogarpgy</a></li>
+								<li class="li-al"><a href="#Navigation" class="li-a">-Navigation</a></li>
+								<li class="li-al"><a href="#modal" class="li-a">-modal</a></li>
+								<li class="li-al"><a href="#Ratings" class="li-a">-Ratings</a></li>
+								<li class="li-al"><a href="#toast" class="li-a">-Toast-notify-snackbar</a></li>
+								<li class="li-al"><a href="#grid" class="li-a">-simplified grid</a></li>
 							</ul>
 						</div>
 					</li>
@@ -86,22 +98,25 @@
 		</main>
 	</section>
 	<!-- script for index -->
-	<script type="text/javascript">
-		var coll = document.querySelectorAll(".link");
-		var i;
+	<!-- <script type="text/javascript">
+		var coll = document.querySelectorAll(".li-al");
+		// console.log('lis',coll)
+	var i;
 		for (let i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", (e) => {
-				e.preventDefault();
-				coll[i].classList.toggle("active");
-				var content = coll[i].nextElementSibling;
-				if (content.style.display === "block") {
-					content.style.display = "none";
-				} else {
-					content.style.display = "block";
-				}
-			});
-		}
-	</script>
+		coll[i].addEventListener("click", (e) => {
+			e.preventDefault();
+			//  coll[i].classList.toggle("active");
+				 var content = coll[i];
+
+				 console.log('colors',content.style)
+			// 	if (content.style.color === '#d97706') {
+			// 		content.style.color = "white";
+			// 	 } else {
+			// 	 	content.style.color = "#d97706";
+			//  }
+		});
+	}
+	</script> -->
 	<!-- end -->
 
 
