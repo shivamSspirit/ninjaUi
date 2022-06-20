@@ -433,8 +433,11 @@
 }
 
 [class="heart"] {
-	position: absolute;
-	left: -100vw;
+    position: absolute;
+    left: 0.5vw;
+    top: 3vh;
+    z-index: -1;
+
 }
 
 [for="heart"] {
