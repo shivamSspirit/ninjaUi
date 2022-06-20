@@ -432,7 +432,7 @@
 	background-color: transparent;
 }
 
-[id="heart"] {
+[class="heart"] {
 	position: absolute;
 	left: -100vw;
 }
@@ -459,7 +459,7 @@
 	background: transparent;
 }
 
-[id="heart"]:checked + label {
+[class="heart"]:checked + label {
 	color: #e2264d;
 	will-change: font-size;
 	animation: heart 1s cubic-bezier(0.17, 0.99, 0.32, 1.49);
