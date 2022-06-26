@@ -1,4 +1,11 @@
-// adding header on all pages
+//adding header on all pages
+
+var changebleElement = document.querySelector('.asidehide');
+var toggleButton = document?.getElementById('toggleId')?.addEventListener('click',()=>{
+  changebleElement.classList.add('.asideshow')
+  console.log('fdfsfdfs')
+});
+
 
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -7,7 +14,6 @@ function includeHTML() {
       elmnt = z[i];
       file = elmnt.getAttribute("w3-include-html");
       if (file) {
-        console.log(file)
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4) {
@@ -23,3 +29,12 @@ function includeHTML() {
       }
     }
   };
+
+
+  // hamburger
+
+  
+
+  
+  
+ 

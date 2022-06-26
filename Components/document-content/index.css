@@ -11,8 +11,9 @@ body {
 
 #container {
 	display: grid;
-	height: 100vh;
+	max-height: 100vh;
 	grid-gap: 5px;
+	font-family: var(--fonts);
 
 	grid-template-areas:
 		"header header header header header"
@@ -27,7 +28,7 @@ body {
 
 .header {
 	grid-area: header;
-	background-color: var(--default-color);
+	background: var(--land-bg-color); 
 }
 
 .img-container {
@@ -41,25 +42,24 @@ body {
 }
 
 .aside {
-	background-color: var(--default-color);
+	background: var(--land-bg-color); 
 	grid-area: aside;
 	color: black;
-	overflow-y: hidden;
+	padding: 1rem;
 }
 
 .sidebar {
-	/* padding: 1rem; */
-	/* background-color: black; */
-	width: 65%;
+	width: 75%;
 	margin: 0 auto;
-	background-color: black;
-	height: 100vh;
-	padding: 1rem;
+	height: 80vh; 
+	border-radius: 6px;
 }
 
 
 .cl-screens {
 	list-style: none;
+	 /* background: black;  */
+	 height: 100%;
 }
 
 .link {
@@ -81,7 +81,6 @@ body {
 	padding: 0 20px;
 	display: block;
 	overflow: hidden;
-	background-color: var(--primary-color);
 	color: var(--default-color);
 	margin-bottom: 0.5rem;
 }
@@ -94,6 +93,10 @@ body {
 	list-style: none;
 }
 
+.p0-screens li{
+	padding-top: .8rem;
+}
+
 .p1-screens {
 	list-style: none;
 }
@@ -102,7 +105,7 @@ body {
 
 .li-a {
 	text-decoration: none;
-	color: var(--default-color);
+	color: var(--primary-color);
 	font-size: var(--side-txt-size);
 	font-weight: var(--side-text-weight);
 }
@@ -111,21 +114,24 @@ li {
 	color: var(--default-color);
 }
 
-/* .active,
-.li-al:hover {
-	background-color: black;
-	color: #fff;
-}   */
+
+.li-a:hover{
+	color: rgb(122, 137, 115);
+	border: solid 1.3px var(--default-color);
+	padding: .6rem;
+	border-radius: 6px;
+}  
 
 
 
 
 .main {
-	background-color: var(--default-color);
+	background: var(--land-bg-color);
 	grid-area: main;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	font-family: var(--fonts);
 }
 
 .content {
@@ -138,14 +144,15 @@ li {
 }
 
 .heading {
-	font-size: var(--main-head-size);
-	font-weight: var(--main-head-weight);
-	color: var(--main-text-color);
+	font-size: var(--main-text-size);
+	font-weight: var(--main-text-weight);
+	text-align: left;
+	padding-top: 1rem;
+	color: rgb(3, 2, 2);
 }
 
 @media only screen and (max-width: 500px) {
 	.aside {
-		background-color: var(--default-color);
 		grid-area: '';
 		color: black;
 		overflow-y: hidden;
@@ -154,12 +161,9 @@ li {
 
 	.header {
 		grid-area: header;
-		background-color: var(--default-color);
-		height: 10vh;
 	}
 
 	.main {
-		background-color: var(--default-color);
 		grid-area: main;
 		display: flex;
 		flex-direction: column;

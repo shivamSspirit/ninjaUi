@@ -8,11 +8,12 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font: var(--fonts);
 	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .single-input {
-	background-color: black;
+	background: black;
 	width: 50%;
 	margin: 0 auto;
 	padding: 1.5rem;
@@ -32,6 +33,7 @@
 	font-size: medium;
 	font-weight: 550;
 	color: var(--default-color);
+	font: var(--fonts);
 }
 
 .input {
@@ -39,7 +41,7 @@
 	height: 2.5rem;
 	border: 1.2px solid rgb(77, 75, 75);
 	border-radius: 4px;
-	/* background-color: rgb(233, 233, 233); */
+	/* background: rgb(233, 233, 233); */
 	font-size: small;
 	font-weight: 520;
 	color: rgb(90, 88, 88);
@@ -47,7 +49,7 @@
 
 .input-error {
 	border: 1.5px solid rgb(179, 13, 13);
-	background-color: rgb(247, 181, 181);
+	background: rgb(247, 181, 181);
 }
 
 .input-email {
@@ -66,20 +68,20 @@
 .form-icon {
 	max-width: 1.5rem;
 	position: absolute;
-	right: 19rem;
-	top: 15.3rem;
+	right: 19.6rem;
+	top: 14rem;
 }
 
 .form-icon-warning {
-	top: 10.3rem;
+	top: 10.1rem;
 }
 
 .form-icon-disable {
-	top: 15.1rem
+	top: 14.6rem
 }
 
 .checkbox {
-	background-color: black;
+	background: black;
 	width: 50%;
 	margin: 0 auto;
 	color: var(--default-color);
@@ -93,7 +95,7 @@
 }
 
 .radios {
-	background-color: black;
+	background: black;
 	width: 50%;
 	margin: 0 auto;
 	color: var(--default-color);

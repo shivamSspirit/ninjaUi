@@ -3,11 +3,13 @@
 body {
 	width: fit-content;
 	height: fit-content;
+	font-family: var(--fotns);
 }
 
 .alerts {
 	display: flex;
 	flex-direction: column;
+	font-family: var(--fotns);
 }
 
 
@@ -17,6 +19,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
+	font-family: var(--fotns);
 }
 
 .basic-alt-info {
@@ -28,6 +31,7 @@ body {
 	font-size: var(--main-head-size);
 	font-weight: var(--main-head-weight);
 	color: var(--primary-color);
+	font-family: var(--fotns);
 }
 
 .description {
@@ -45,7 +49,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(56, 24, 24);
+	background: rgb(56, 24, 24);
 	border-radius: 4px;
 	width: 50%;
 }
@@ -54,7 +58,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(44, 28, 4);
+	background: rgb(44, 28, 4);
 	border-radius: 4px;
 	width: 50%;
 }
@@ -63,7 +67,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(68, 114, 199);
+	background: rgb(68, 114, 199);
 	border-radius: 4px;
 	width: 50%;
 }
@@ -116,6 +120,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
+	font-family: var(--fotns);
 }
 
 
@@ -123,10 +128,11 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(56, 24, 24);
+	background: rgb(56, 24, 24);
 	border-radius: 4px;
 	width: 50%;
 	padding: 0.6rem 0rem;
+	font-family: var(--fotns);
 	margin-top: 1rem;
 }
 
@@ -150,22 +156,25 @@ body {
 	font-size: 1rem;
 	font-weight: 600;
 	color: antiquewhite;
+	font-family: var(--fotns);
 }
 
 .p-error-title {
 	color: antiquewhite;
 	font-weight: 500;
+	font-family: var(--fotns);
 }
 
 .alert-warning-title {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(44, 28, 4);
+	background: rgb(44, 28, 4);
 	border-radius: 4px;
 	width: 50%;
 	padding: 0.6rem 0rem;
 	margin-top: 1rem;
+	font-family: var(--fotns);
 }
 
 .icon-warning-title {
@@ -192,7 +201,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(68, 114, 199);
+	background: rgb(68, 114, 199);
 	border-radius: 4px;
 	width: 50%;
 	padding: 0.6rem 0rem;
@@ -225,17 +234,19 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
+	font-family: var(--fotns);
 }
 
 .outline-alerts div {
 	margin-top: 1rem;
+	font-family: var(--fotns);
 }
 
 .alert-error-outline {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: transparent;
+	background: transparent;
 	border-radius: 4px;
 	width: 50%;
 	border: 1.5px solid red;
@@ -245,7 +256,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: transparent;
+	background: transparent;
 	border-radius: 4px;
 	width: 50%;
 	border: 1.5px solid rgb(155, 128, 9);
@@ -255,7 +266,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: transparent;
+	background: transparent;
 	border-radius: 4px;
 	width: 50%;
 	border: 1.5px solid rgb(64, 96, 240);
@@ -308,19 +319,20 @@ body {
 .actionable-alerts {
 	display: flex;
 	flex-direction: column;
-
+	font-family: var(--fotns);
 	padding: 1.5rem;
 }
 
 .actionable-alerts div {
 	margin-top: 1rem;
+	font-family: var(--fotns);
 }
 
 .alert-warning-action {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: rgb(245, 226, 141);
+	background: rgb(245, 226, 141);
 	border-radius: 4px;
 	width: 50%;
 	border: 1.5px solid rgb(247, 217, 84);
@@ -350,14 +362,14 @@ body {
 }
 
 .close:hover {
-	background-color: rgb(75, 75, 3);
+	background: rgb(75, 75, 3);
 }
 
 .alert-error-action {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-color: transparent;
+	background: transparent;
 	border-radius: 4px;
 	width: 50%;
 	border: 1.5px solid red;
@@ -366,7 +378,7 @@ body {
 
 .alert-error-action:hover {
 	filter: brightness(140%);
-	background-color: rgb(245, 131, 131);
+	background: rgb(245, 131, 131);
 }
 
 .icon-error-action {

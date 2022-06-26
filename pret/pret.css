@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-.nav-main{
-width: 100%;
-height: 60px;
- background-color: antiquewhite; 
-display: flex;
- z-index: 1000; 
- position: fixed;
+.nav-main {
+    width: 100%;
+    height: 60px;
+    background: antiquewhite;
+    display: flex;
+    z-index: 1000;
+    position: fixed;
 }
 
-.btn-toggle-nav{
+.btn-toggle-nav {
     width: 60px;
     height: 100%;
-    background-color: grey; 
+    background: grey;
     background-image: url(../images/svgs/player.svg);
 }
 
@@ -23,35 +23,35 @@ ul {
     display: flex;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.show-this{
+.show-this {
     flex-direction: row;
     gap: 1rem;
 }
 
-.asides{
+.asides {
     position: fixed;
     width: 150px;
     height: 30px;
     top: 100px;
     display: flex;
-    background-color: aqua;
+    background: aqua;
 }
 
 
-.asidesss{
+.asidesss {
     position: fixed;
     width: 150px;
     height: 30px;
     top: 100px;
     display: flex;
-    background-color: transparent;
+    background: transparent;
 }
 
-.asides ul{
+.asides ul {
     overflow: hidden;
     visibility: hidden;
 }

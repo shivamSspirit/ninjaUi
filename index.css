@@ -3,6 +3,7 @@
 @import url(./Components/Header/header.css);
 @import url(./Components/images/image.css);
 @import url(./Components/document-content/index.css);
+@import url(./theme/heading.css);
 
 * {
 	box-sizing: border-box;
@@ -17,8 +18,11 @@ a {
 .land-container {
 	width: 100vw;
 	height: 100vh;
-	background-color: var(--default-color);
-	padding: 1.5rem;
+	background: var(--land-bg-color);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	font-family: var(--fonts);
 }
 
 
@@ -27,7 +31,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	height: inherit;
+	height: 81.3vh;
 }
 
 .part-1 {
@@ -58,11 +62,19 @@ a {
 
 .part-2 {
 	width: 50%;
+	display: flex;
 }
 
 .square-1 {
 	max-width: 100%;
 	max-height: 80%;
+}
+
+.main-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .get-start {
