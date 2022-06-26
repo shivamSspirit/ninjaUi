@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings</title>
+    <script
+		src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+		defer=""></script>
+    <link rel="stylesheet" href="./ratings.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="ratings-container">
+        <h2>Star Ratings</h2>
+        <div class="rates">
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+    </div> 
+    
+    <pre class="prettyprint lang-html" id='ratings'>
+        <code>
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star filled"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </code></pre>
+
+
+
+        <script type="text/javascript">
+            (function () {
+                function htmlEscape(s) {
+                    return s
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;");
+                }
+                // this page's own source code
+                var ratingsHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('ratings').innerHTML + "\n<\/html>\n");
+                // var ratingsHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
+                // Highlight the operative parts:
+                ratingsHtml = ratingsHtml.replace(
+                    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                    '<span class="operative">$&<\/span>'
+                );
+                // insert into PRE
+                document.getElementById("ratings").innerHTML = ratingsHtml;
+            })();
+    
+        </script>
+</body>
+</html>

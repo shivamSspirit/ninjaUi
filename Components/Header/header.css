@@ -46,7 +46,7 @@ body {
 
 .home:hover {
 	color: var(--header-text-hover-txt-color);
-	background: var(--header-text-hover-bg-color);
+	/* background: var(--header-text-hover-bg-color); */
 }
 
 .document {
@@ -57,7 +57,7 @@ body {
 
 .document:hover {
 	color: var(--header-text-hover-txt-color);
-	background: var(--header-text-hover-bg-color);
+	/* background: var(--header-text-hover-bg-color); */
 }
 
 .navs {
@@ -116,6 +116,12 @@ body {
 	align-items: center;
 	align-content: center;
 }
+
+/* .social-icons:hover{
+	/* background-color: aqua; 
+	color: red;
+	outline: 1px solid red;
+} */
 
 .hamburger {
 	background: antiquewhite;

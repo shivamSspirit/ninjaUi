@@ -1,0 +1,26 @@
+@import url(../../theme/theme.css);
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.ratings-container{
+   display: flex;
+   flex-direction: column;
+   text-align:center;
+}
+
+.rates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.filled{
+    color: rgb(175, 145, 88);
+}

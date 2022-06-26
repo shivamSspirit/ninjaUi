@@ -1,69 +1,45 @@
 :root {
 
-	/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-	--fonts:  'Inter', sans-serif;
+	--fonts: 'Inter', sans-serif;
 	/* header */
 
 
-
-	/* --backgroundLightImg:; */
 	--default-color: #d97706;
 	--primary-color: black;
 	--secondary-color: white;
-
 	--header-text-size: 1.1rem;
 	--header-text-weight: 530;
-
 	--header-text-hover-bg-color: var(--default-color);
 	--header-text-hover-txt-color: var(--secondary-color);
 
-	/* header is over */
 
 	/* landing page style */
 
 	--land-head-size: 1.5rem;
 	--land-head-weight: 530;
-
 	--land-text-size: 1.1rem;
 	--land-text-weight: 510;
-
 	--land-txt-color: var(--primary-color);
-	--land-bg-color: linear-gradient(0.25turn, #7ab5ce, #b4e691, #eab983);
-	
-		
+	--land-bg-color: linear-gradient(0.25turn, #97879b, #63775b, #666089);
 
-
-	/* landing page end */
 
 	/* main content page start */
 
 	/* side bar */
 	--side-head-size: 1.3rem;
 	--side-head-weight: 600;
-
 	--side-txt-size: 1.1rem;
 	--side-text-weight: 530;
-
 	--side-txt-color: var(--primary-color);
 	--side-txt-hover-color: var(--secondary-color);
 
-	/* side bar */
 
 	/* main content */
-
 	--main-text-size: 1.3rem;
 	--main-text-weight: 530;
-
 	--main-head-size: 1.5em;
 	--main-head-weight: 600;
-
 	--main-text-color: var(--primary-color);
-
-	/* code style */
-
-	/* code style end */
-
-	/* main content */
 
 	/* main content page end */
 }

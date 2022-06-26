@@ -38,7 +38,7 @@ p {
 }
 
 .row-items {
-    background: rgb(4, 95, 95);
+    /* background: rgb(4, 95, 95); */
     width: 11rem;
     height: 4rem;
     display: flex;
@@ -47,4 +47,55 @@ p {
     align-items: center;
     align-content: center;
     justify-items: center;
+}
+
+.row-items0{
+    background:#fff ;
+}
+
+.row-items1{
+    background: rgb(228, 223, 223);
+}
+.row-items2{
+    background: rgb(143, 172, 172);
+}
+.row-items3{
+    background: rgb(70, 67, 67);
+}
+.row-items4{
+    background:rgb(97, 79, 79);
+}
+.row-items5{
+    background: rgb(62, 45, 45);
+}
+.row-items6{
+    background: rgb(56, 28, 28) ;
+}
+.row-items7{
+    background: rgb(62, 3, 3) ;
+}
+.row-items8{
+    background:  rgb(235, 237, 241);
+}
+.row-items9{
+    background:  rgb(106, 121, 151);
+}
+.row-items10{
+    background:  rgb(50, 70, 114);
+}
+.row-items11{
+    background:  rgb(5, 34, 98);
+}
+.row-items12{
+    background: rgb(193, 186, 200);
+}
+
+.row-items13{
+    background:rgb(119, 93, 146);
+}
+.row-items14{
+    background: rgb(133, 76, 190);
+}
+.row-items15{
+    background:  rgb(37, 2, 72);
 }

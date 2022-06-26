@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+        defer=""></script>
+    <link rel="stylesheet" href="./modal.css" />
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="modal-container">
+        <div class="simple-modal">
+            <div class="openmodal">
+                <button class="btn toggle-btn">
+                    Open Modal
+                </button>
+            </div>
+            <div class="modal">
+                <p>This is simple modal you can add content what you want for your usecases or close it as well</p>
+                <button class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+    <pre class="prettyprint lang-html" id='modals'>
+<code>
+<div class="simple-modal">
+<div class="openmodal">
+<button class="btn toggle-btn">
+ Open Modal
+</button>
+</div>
+<div class="modal">
+<p>This is simple modal you can add content what you want for your usecases or close it as well</p>
+<button class="btn">Close</button>
+</div>
+</div>
+</code>
+    </pre>
+
+
+    <script type="text/javascript">
+        (function () {
+            function htmlEscape(s) {
+                return s
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;");
+            }
+            // this page's own source code
+            var modalHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('modals').innerHTML + "\n<\/html>\n");
+            // var modalHtmlOne = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('img-1').innerHTML + "\n<\/html>\n");
+            // Highlight the operative parts:
+            modalHtml = modalHtml.replace(
+                /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+                '<span class="operative">$&<\/span>'
+            );
+            // insert into PRE
+            document.getElementById("modals").innerHTML = modalHtml;
+        })();
+
+    </script>
+
+</body>
+
+</html>

@@ -16,14 +16,11 @@
 
 <body>
 	<section id="container">
-
 		<div class="header" w3-include-html="../Header/header.html"></div>
-
 		<aside class="aside">
 			<div class="sidebar">
 				<ul class="cl-screens">
 					<li class="">
-
 						<div class="content-collapse">
 							<div class="heading">Components</div>
 							<ul class="p0-screens">
@@ -50,11 +47,15 @@
 								</li>
 								<li class="li-al"><a href="../typography/typos.html" target="iframe_a"
 										class="li-a">Typogarpgy</a></li>
-								<li class="li-al"><a href="../Header/header.html" class="li-a" target="iframe_a">Navigation</a></li>
-								<li class="li-al"><a href="#modal" class="li-a">Modal</a></li>
-								<li class="li-al"><a href="#Ratings" class="li-a">Ratings</a></li>
+								<li class="li-al"><a href="../Header/header.html" class="li-a"
+										target="iframe_a">Navigation</a></li>
+								<li class="li-al"><a href="../modal/modal.html" target="iframe_a" class="li-a">Modal</a>
+								</li>
+								<li class="li-al"><a href="../ratings/rating.html" class="li-a"
+										target="iframe_a">Ratings</a></li>
 								<li class="li-al"><a href="#toast" class="li-a">Toast-notify-snackbar</a></li>
-								<li class="li-al"><a href="#grid" class="li-a">Simplified grid</a></li>
+								<li class="li-al"><a href="./index.html" target="iframe_a" class="li-a">Simplified
+										grid</a></li>
 							</ul>
 						</div>
 					</li>
@@ -67,29 +68,63 @@
 			</iframe>
 		</main>
 	</section>
-	<!-- script for index -->
-	<!-- <script type="text/javascript">
-		var coll = document.querySelectorAll(".li-al");
-		// console.log('lis',coll)
-	var i;
-		for (let i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", (e) => {
-			e.preventDefault();
-			//  coll[i].classList.toggle("active");
-				 var content = coll[i];
-
-				 console.log('colors',content.style)
-			// 	if (content.style.color === '#d97706') {
-			// 		content.style.color = "white";
-			// 	 } else {
-			// 	 	content.style.color = "#d97706";
-			//  }
-		});
-	}
-	</script> -->
-	<!-- end -->
 
 
+	<!-- <section>
+		<pre class="prettyprint lang-html" id='grids'>
+<code>
+<section id="">
+<div class="header" w3-include-html="../Header/header.html"></div>
+<aside class="aside">
+<div class="sidebar">
+		<ul class="cl-screens">
+			<li class="">
+				<div class="content-collapse">
+<div class="heading">Components</div>
+<ul class="p0-screens">
+	<li class="li-al"><a href="../iframe/iframe.html" target="iframe_a"
+			class="li-a">Getting-Started</a>
+</li>
+<li class="li-al"><a href="../avatars/avatar.html" target="iframe_a"
+		class="li-a">Avatar</a></li>
+<li class="li-al"><a href="../alerts/alert.html" target="iframe_a"
+		class="li-a">Alert</a></li>
+<li class="li-al"><a href="../badges/badges.html" target="iframe_a"
+		class="li-a">Badges</a></li>
+<li class="li-al"><a href="../buttons/btn.html" target="iframe_a"
+		class="li-a">Buttons</a></li>
+<li class="li-al"><a href="../clCards/card.html" target="iframe_a"
+		class="li-a">Cards</a></li>
+<li class="li-al"><a href="../images/image.html" target="iframe_a"
+		class="li-a">Images</a></li>
+<li class="li-al"><a href="../inputs/input.html" target="iframe_a" class="li-a">Inputs
+		and Forms</a>
+</li>
+<li class="li-al"><a href="../colors/colors.html" target="iframe_a"
+		class="li-a">Colors</a>
+</li>
+<li class="li-al"><a href="../typography/typos.html" target="iframe_a"
+		class="li-a">Typogarpgy</a></li>
+<li class="li-al"><a href="../Header/header.html" class="li-a" target="iframe_a">Navigation</a></li>
+<li class="li-al"><a href="../modal/modal.html" target="iframe_a" class="li-a">Modal</a></li>
+<li class="li-al"><a href="../ratings/rating.html" class="li-a" target="iframe_a">Ratings</a></li>
+<li class="li-al"><a href="#toast" class="li-a">Toast-notify-snackbar</a></li>
+<li class="li-al"><a href="#grid" class="li-a">Simplified grid</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+<main class="main">
+<iframe src="../iframe/iframe.html" name="iframe_a" height="100%" width="100%" title="Iframe Example"
+style="border:none;">
+</iframe>
+</main>
+</section>
+</code>
+</pre>
+	</section> -->
 	<!-- script for badges -->
 	<script type="text/javascript">
 		let emailBadge = document.querySelector(".status-number-email");
@@ -170,13 +205,22 @@
 			}
 			// this page's own source code
 			var quineHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('quine').innerHTML + "\n<\/html>\n");
+
+			var gridsHtml = htmlEscape("<!DOCTYPE html>\n<html>\n" + document.getElementById('grids').innerHTML + "\n<\/html>\n");
 			// Highlight the operative parts:
 			quineHtml = quineHtml.replace(
 				/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
 				'<span class="operative">$&<\/span>'
 			);
+
+			gridsHtml = gridsHtml.replace(
+				/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+				'<span class="operative">$&<\/span>'
+			);
 			// insert into PRE
 			document.getElementById("quine").innerHTML = quineHtml;
+
+			document.getElementById("grids").innerHTML = gridsHtml;
 		})();
 	</script>
 	<!-- script for codeBox end -->
