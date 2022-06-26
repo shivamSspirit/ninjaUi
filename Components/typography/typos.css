@@ -1,11 +1,11 @@
 @import url(../../theme/theme.css);
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-.typos-container{
+.typos-container {
     display: flex;
     max-width: 100%;
     max-height: 100%;
@@ -15,22 +15,22 @@
     padding: 1rem;
 }
 
-.t-head-section{
+.t-head-section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.sections-container{
+.sections-container {
     display: flex;
     flex-direction: column;
     gap: .6rem;
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: column;
-    gap: .4rem;  
+    gap: .4rem;
 }
 
 /* #sec-txt-size{
@@ -39,83 +39,82 @@ flex-direction: column;
 gap: .4rem; */
 
 
-.txt-demos{
+.txt-demos {
     display: flex;
     flex-direction: column;
     gap: .9rem;
 }
 
-.h1{
+.h1 {
     font-size: 4.3rem;
 }
 
-.h2{
+.h2 {
     font-size: 3.3rem;
 }
 
-.h3{
+.h3 {
     font-size: 2.7rem;
 }
-.h4{
+
+.h4 {
     font-size: 2.4rem;
 }
-.h5{
+
+.h5 {
     font-size: 2rem;
 }
-.h6{
+
+.h6 {
     font-size: 1.3rem;
 }
 
 
-#sec-txt-weight{
+#sec-txt-weight {}
 
-}
-
-.light{
+.light {
     font-weight: 333;
 }
 
-.lighter{
+.lighter {
     font-weight: 484;
 }
 
-.meduim{
+.meduim {
     font-weight: 555;
 }
 
-.regular{
+.regular {
     font-weight: 600;
 }
 
-.bold{
+.bold {
     font-weight: 690;
 }
 
-.extrabold{
+.extrabold {
     font-weight: 733;
 }
 
-.txt-primary{
+.txt-primary {
     color: rgb(71, 116, 175);
 }
 
 
-.txt-secondary{
+.txt-secondary {
     color: rgb(11, 7, 3);
 }
 
 
-.txt-default{
+.txt-default {
     color: rgb(167, 122, 66);
 }
 
 
-.txt-grey{
+.txt-grey {
     color: grey;
 }
 
-.txt-purple{
-color: purple;
+.txt-purple {
+    color: purple;
 }
-
-

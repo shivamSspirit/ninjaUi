@@ -1,7 +1,7 @@
 @import url(../../theme/theme.css);
 
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -55,11 +55,9 @@ a{
 	color: var(--primary-color);
 }
 
-.lol-pri {
-}
+.lol-pri {}
 
-.pri-code {
-}
+.pri-code {}
 
 .btn-primary {
 	background-color: aliceblue;
@@ -99,14 +97,11 @@ a{
 	padding: 1.5rem;
 }
 
-.out-buttons {
-}
+.out-buttons {}
 
-.lol-out {
-}
+.lol-out {}
 
-.out-code {
-}
+.out-code {}
 
 .btn-outline {
 	background-color: var(--default-color);
@@ -157,8 +152,7 @@ a{
 	padding: 1.5rem;
 }
 
-.link-btn {
-}
+.link-btn {}
 
 .lol-link {
 	margin-top: 1rem;
@@ -254,13 +248,13 @@ a{
 
 
 @media only screen and (max-width: 500px) {
-	.lol-link{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	justify-items: center;
-	align-items: center;
-	padding: 1.5rem;
+	.lol-link {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		padding: 1.5rem;
 	}
 }

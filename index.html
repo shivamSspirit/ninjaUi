@@ -7,35 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css" />
     <title>spiritUi</title>
+    <script type="text/javascript" src="./headerScript.js"></script>
 </head>
 
 <body>
     <div class="land-container">
-
-        <header>
-            <div class="header">
-                <div class="icon-container">
-                    <a class="img-link" href="./index.html"><span>
-                            <img class="icon" src="./images/jpeg/headicon.png" alt="" /></a>
-                    </span>
-                </div>
-                <div class="nav">
-                    <a href="./index.html" class="home navs">Home</a>
-                    <a href="./Components/document-content/index.html" class="document navs">Document</a>
-                </div>
-
-                <div class="socials">
-                    <span><a href="https://github.com/shivamsoni00"><img src='./images/jpeg/github.png'
-                                class="social-icons" /></a></span>
-                    <span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img
-                                src='./images/jpeg/linkedin.png' class="social-icons" /></a></span>
-                    <span><a href="https://twitter.com/ShivamSspirit">
-                            <img src='./images/jpeg/twitter.png' class="social-icons" /></span>
-                </div>
-            </div>
-        </header>
-
-
+        <div class="header-container" w3-include-html="./Components/Header/header.html"> </div>
         <div class="partition">
             <section class="part-1">
                 <h2 class="title">spiritUi</h2>
@@ -50,6 +27,9 @@
             </section>
         </div>
     </div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

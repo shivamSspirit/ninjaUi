@@ -10,33 +10,14 @@
 	<script
 		src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
 		defer=""></script>
+
+	<script type="text/javascript" src="../../headerScript.js"></script>
 </head>
 
 <body>
 	<section id="container">
 
-		<!-- <header> -->
-			<div class="header">
-				<div class="icon-container">
-					<a class="img-link" href="../../index.html"><span>
-							<img class="icon" src="../../images/jpeg/headicon.png" alt="" /></a>
-					</span>
-				</div>
-				<div class="nav">
-					<a href="../../index.html" class="home navs">Home</a>
-					<a href="./index.html" class="document navs">Document</a>
-				</div>
-				<div class="socials">
-					<span><a href="https://github.com/shivamsoni00"><img src='../../images/jpeg/github.png'
-								class="social-icons" /></a></span>
-					<span><a href="https://www.linkedin.com/in/shivam-s-b37b00157/"><img
-								src='../../images/jpeg/linkedin.png' class="social-icons" /></a></span>
-					<span><a href="https://twitter.com/ShivamSspirit">
-							<img src='../../images/jpeg/twitter.png' class="social-icons" /></span>
-				</div>
-			</div>
-		<!-- </header> -->
-
+		<div class="header-container-mainPage" w3-include-html="../Header/header.html"></div>
 
 		<aside class="aside">
 			<div class="sidebar">
@@ -77,9 +58,11 @@
 						<a href="" class="link">p1 screens</a>
 						<div class="content-collapse">
 							<ul class="p1-screens">
-								<li class="li-al"><a href="../colors/colors.html" target="iframe_a" class="li-a">-Colors</a>
-							</li>
-								<li class="li-al"><a href="../typography/typos.html" target="iframe_a" class="li-a">-Typogarpgy</a></li>
+								<li class="li-al"><a href="../colors/colors.html" target="iframe_a"
+										class="li-a">-Colors</a>
+								</li>
+								<li class="li-al"><a href="../typography/typos.html" target="iframe_a"
+										class="li-a">-Typogarpgy</a></li>
 								<li class="li-al"><a href="#Navigation" class="li-a">-Navigation</a></li>
 								<li class="li-al"><a href="#modal" class="li-a">-modal</a></li>
 								<li class="li-al"><a href="#Ratings" class="li-a">-Ratings</a></li>
@@ -210,6 +193,10 @@
 		})();
 	</script>
 	<!-- script for codeBox end -->
+
+	<script>
+		includeHTML();
+	</script>
 </body>
 
 </html>

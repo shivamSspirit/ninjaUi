@@ -20,7 +20,7 @@
 
 /* vertical card */
 
-.v-card{
+.v-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -30,14 +30,14 @@
 
 }
 
-.title-card{
+.title-card {
 	font-size: var(--main-head-size);
 	font-weight: var(--main-head-weight);
 	color: var(--primary-color);
 	text-align: center;
 }
 
-.paragraph-card{
+.paragraph-card {
 	font-size: var(--main-text-size);
 	font-weight: var(--main-text-weight);
 	color: var(--primary-color);
@@ -100,7 +100,7 @@
 
 /* horizontal cards */
 
-.h-card{
+.h-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -150,7 +150,7 @@
 /* overlay cards */
 
 
-.over-card{
+.over-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -268,7 +268,7 @@
 
 /* product page */
 
-.pro-one-card{
+.pro-one-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -385,7 +385,7 @@
 
 /* e-commerce cards */
 
-.pro-two-card{
+.pro-two-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -433,10 +433,10 @@
 }
 
 [class="heart"] {
-    position: absolute;
-    left: 0.5vw;
-    top: 3vh;
-    z-index: -1;
+	position: absolute;
+	left: 0.5vw;
+	top: 3vh;
+	z-index: -1;
 
 }
 
@@ -462,13 +462,14 @@
 	background: transparent;
 }
 
-[class="heart"]:checked + label {
+[class="heart"]:checked+label {
 	color: #e2264d;
 	will-change: font-size;
 	animation: heart 1s cubic-bezier(0.17, 0.99, 0.32, 1.49);
 }
 
 @keyframes heart {
+
 	0%,
 	17.5% {
 		font-size: 0;
@@ -512,7 +513,7 @@
 
 /* second card */
 
-.pro-card-three{
+.pro-card-three {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -599,7 +600,7 @@
 }
 
 /* action card */
-.actionable-card{
+.actionable-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -607,6 +608,7 @@
 	justify-items: center;
 	padding: 1.5rem;
 }
+
 .action-card {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	max-width: 16rem;
@@ -618,7 +620,7 @@
 	border: 1.3px solid gray;
 	border-radius: 4px;
 	/* border-top-right-radius: 4px; */
-	margin-top:1rem;
+	margin-top: 1rem;
 }
 
 .img-action {
