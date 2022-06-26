@@ -188,7 +188,7 @@ body {
 }
 
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 505px) {
 	.home {
 		display: none;
 	}
@@ -227,9 +227,8 @@ body {
 
 	.hamburger {
 		display: flex;
-		 margin-left: 5rem;
+		margin-left: 11rem;
 		flex-basis: 11%;
-
 	}
 
 	.ham-icon {
