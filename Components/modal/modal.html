@@ -16,13 +16,13 @@
     <div class="modal-container">
         <div class="simple-modal">
             <div class="openmodal">
-                <button class="btn toggle-btn">
+                <button type="button" class="btn toggle-btn open-modal" data-open="modal1">
                     Open Modal
                 </button>
             </div>
-            <div class="modal">
+            <div class="modal" id="modal1">
                 <p>This is simple modal you can add content what you want for your usecases or close it as well</p>
-                <button class="btn">Close</button>
+                <button class="btn close-modal" aria-label="close modal" data-close="modal1">Close</button>
             </div>
         </div>
     </div>
@@ -43,6 +43,29 @@
 </div>
 </code>
     </pre>
+
+    <script type="text/javascript">
+        // opening modal
+        var openEls = document.querySelectorAll("[data-open]");
+        var isVisible = "is-visible";
+
+        for (const el of openEls) {
+            el.addEventListener("click", function () {
+                const modalId = this.dataset.open;
+                document.getElementById(modalId).classList.add(isVisible);
+            });
+        }
+
+        // closing modal
+
+        var closeEls = document.querySelectorAll("[data-close]");
+
+        for (const el of closeEls) {
+            el.addEventListener("click", function () {
+                this.parentElement.classList.remove(isVisible);
+            });
+        }
+    </script>
 
 
     <script type="text/javascript">
