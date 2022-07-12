@@ -11,7 +11,7 @@
         defer=""></script>
     <title>Header</title>
 
-    
+
 </head>
 
 <body>
@@ -44,17 +44,28 @@
                     </span>
                 </div>
 
-                <div id="toggleId" class="hamburger">
-                    <button class="btn-toggle-nav">
-                        <img class="ham-icon" src="../../images/jpeg/menus.png" alt="" />
-                    </button>
-                </div>
-
+                <button type="button" class="hamburger btn-toggle-nav open-modal" data-open="modal3"> 
+                        <img class="ham-icon" src="../../images/jpeg/menus.png" alt="" />          
+                </button>
             </div>
         </header>
 
-        <aside class="asidehide">
+        <!-- <button type="button" class="open-modal" data-open="modal1">...</button> -->
+
+        <!-- <div class="modal" id="modal1">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      ...
+      <button class="close-modal" aria-label="close modal" data-close>✕</button>
+    </header>
+    <section class="modal-content">...</section>
+    <footer class="modal-footer">...</footer>
+  </div>
+</div> -->
+
+        <div class="modalss" id="modal3">
             <div class="side-bars">
+                <button class="close-modal" aria-label="close slide1" data-close>✕</button>
                 <div>Components</div>
                 <ul>
                     <li class="li-al"><a href="../iframe/iframe.html" target="iframe_a" class="li-a">Getting-Started</a>
@@ -79,12 +90,29 @@
                     <li class="li-al"><a href="#grid" class="li-a">Simplified grid</a></li>
                 </ul>
             </div>
-        </aside>
+        </div>
 
     </div>
 
 
-<script type="text/javascript"  src="../../headerScript.js"></script>
+    <script type="text/javascript" src="../../headerScript.js"></script>
+
+     <script type="text/javascript">
+        
+        var openslide = document.querySelectorAll("[data-open]");
+        var isVisible = "is-visible";
+
+        for (const el of openslide) {
+            console.log('el',el)
+            el.addEventListener("click", function () {
+                const modalId = this.dataset.open;
+                console.log('mod', modalId)
+                document.getElementById(modalId).classList.add(isVisible);
+            });
+        }
+        
+
+    </script>
 
 </body>
 

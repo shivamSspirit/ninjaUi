@@ -8,13 +8,12 @@ body {
 .header {
 	display: flex;
 	flex-direction: row;
-	/* width: 97.8%; */
-	/* width: 97.7vw; */
 	height: auto;
 	color: var(--primary-color);
 	padding: 1rem;
 	gap: 1rem;
 	font-family: var(--fonts);
+	border-radius: 6px;
 }
 
 .icon-container {
@@ -36,18 +35,12 @@ body {
 	gap: 1rem;
 }
 
-
-
 .home {
 	flex-basis: 5%;
 	font-size: var(--header-text-size);
 	font-weight: var(--header-text-weight);
 }
 
-.home:hover {
-	color: var(--header-text-hover-txt-color);
-	/* background: var(--header-text-hover-bg-color); */
-}
 
 .document {
 	flex-basis: 5%;
@@ -55,10 +48,6 @@ body {
 	font-weight: var(--header-text-weight);
 }
 
-.document:hover {
-	color: var(--header-text-hover-txt-color);
-	/* background: var(--header-text-hover-bg-color); */
-}
 
 .navs {
 	text-decoration: none;
@@ -117,18 +106,12 @@ body {
 	align-content: center;
 }
 
-/* .social-icons:hover{
-	/* background-color: aqua; 
-	color: red;
-	outline: 1px solid red;
-} */
 
 .hamburger {
 	background: antiquewhite;
 	display: none;
 }
 
-.btn-toggle-nav {}
 
 .ham-icon {
 	width: 3rem;
@@ -137,7 +120,41 @@ body {
 	background: var(--default-color);
 }
 
-.asidehide{
+.modalss{ 
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background:white;
+	cursor: pointer;
+	 visibility: hidden; 
+	/* display: none; */
+	opacity: 0;
+	transition: all 0.35s ease-in;
+  }
+
+
+  .side-bars {
+	position: relative;
+	max-width: 800px;
+	max-height: 80vh;
+	border-radius: 5px;
+	background: var(--white);
+	overflow: auto;
+	cursor: default;
+  }
+
+
+  .modalss.is-visible {
+ visibility: visible;
+	opacity: 1;
+  }
+/* .asidehide{
 	display: none;
 	background: aquamarine;
 	width: 100%;
@@ -146,29 +163,9 @@ body {
 
 .asideshow{
 	display: block;
-}
-
-/* 
-.btn-toggle-nav {
-	width: 60px;
-	height: 100%;
-	background: grey;
-	background-image: url(../../images/svgs/email.svg);
-}
-
-.asides {
-	position: fixed;
-	width: 150px;
-	height: 30px;
-	top: 100px;
-	display: flex;
-	background: transparent;
-}
-
-.asides ul {
-	overflow: hidden;
-	visibility: visible;
 } */
+
+
 
 @media only screen and (max-width: 860px) {
 	.search-container {
