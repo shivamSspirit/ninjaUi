@@ -35,5 +35,5 @@ To use ninja ui in your project copy the below code and add it in the head secti
 2. overall responsiveness
 
 ### connect with me
-[](https://www.linkedin.com/in/shivam-s-b37b00157/)
-[](https://twitter.com/ShivamSspirit)
+[linkedin](https://www.linkedin.com/in/shivam-s-b37b00157/)
+[http://i.imgur.com/tXSoThF.png](https://twitter.com/ShivamSspirit)
