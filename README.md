@@ -15,18 +15,18 @@ To use ninja ui in your project copy the below code and add it in the head secti
 
 ## components
 
-1. [Alerts] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-2. [Avatars] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-3. [Badges] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-4. [Buttons] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-5. [Cards] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-6. [Colors] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-7. [GridsTabs] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-8. [Headers] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-9. [Images] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-10. [Inputs] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-11. [Typography] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
-12. [Ratings] (https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+1. [Alerts](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+2. [Avatars](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+3. [Badges](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+4. [Buttons](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+5. [Cards](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+6. [Colors](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+7. [GridsTabs](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+8. [Headers](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+9. [Images](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+10. [Inputs](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+11. [Typography](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
+12. [Ratings](https://ninja-ui-git-dev-shivamsoni00.vercel.app/Components/document-content/index.html)
 
 
 ## Future Enhancements
