@@ -36,4 +36,4 @@ To use ninja ui in your project copy the below code and add it in the head secti
 
 ### connect with me
 [linkedin](https://www.linkedin.com/in/shivam-s-b37b00157/)
-[http://i.imgur.com/tXSoThF.png](https://twitter.com/ShivamSspirit)
+[twitter](https://twitter.com/ShivamSspirit)
