@@ -10,6 +10,8 @@
         src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
         defer=""></script>
     <title>Header</title>
+
+
 </head>
 
 <body>
@@ -17,14 +19,13 @@
         <header>
             <div class="header">
                 <div class="icon-container">
-                    <a class="img-link" href="../../index.html">
-                        <span>
-                            <img class="icon" src="../../images/jpeg/headicon.png" alt="" />
-                        </span>
-                    </a>
+                    <a class="img-link" href="../../index.html"><span>
+                            <img class="icon" src="../../images/jpeg/headicon.png" alt="" /></a>
+                    </span>
                 </div>
                 <div class="nav">
                     <a href="../../index.html" class="home navs">Home</a>
+                    <a href="../document-content/index.html" class="document navs">Document</a>
                 </div>
                 <div class="search-container">
                     <input class="search-input" type="text" />
@@ -43,8 +44,8 @@
                     </span>
                 </div>
 
-                <button type="button" class="hamburger btn-toggle-nav open-modal" data-open="modal3">
-                    <img class="ham-icon" src="../../images/jpeg/menus.png" alt="" />
+                <button type="button" class="hamburger btn-toggle-nav open-modal" data-open="modal3"> 
+                        <img class="ham-icon" src="../../images/jpeg/menus.png" alt="" />          
                 </button>
             </div>
         </header>
@@ -96,20 +97,20 @@
 
     <script type="text/javascript" src="../../headerScript.js"></script>
 
-    <script type="text/javascript">
-
+     <script type="text/javascript">
+        
         var openslide = document.querySelectorAll("[data-open]");
         var isVisible = "is-visible";
 
         for (const el of openslide) {
-            console.log('el', el)
+            console.log('el',el)
             el.addEventListener("click", function () {
                 const modalId = this.dataset.open;
                 console.log('mod', modalId)
                 document.getElementById(modalId).classList.add(isVisible);
             });
         }
-
+        
 
     </script>
 
